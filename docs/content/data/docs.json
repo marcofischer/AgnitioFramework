@@ -1,0 +1,207 @@
+[
+  {
+    "chapters" : {
+      "General Topics" : {
+        "general" : [
+          ["Introduction", "introduction"],
+          ["Presentation structures (terminology)", "terminology"],
+          ["Development concepts and patterns", "dev_concepts"],
+          ["Support", "support"]
+        ]
+      },
+      "Custom Events" : {
+        "general" : [
+          ["presentationInit", "event_presentationInit"],
+          ["slideshowLoad", "event_slideshowLoad"],
+          ["slideshowUnload", "event_slideshowUnload"],
+          ["collectionLoad", "event_collectionLoad"],
+          ["collectionUnload", "event_collectionUnload"],
+          ["contentLoad", "event_contentLoad"],
+          ["contentUnload", "event_contentUnload"],
+          ["slideEnter", "event_slideEnter"],
+          ["slideExit", "event_slideExit"],
+          ["sectionEnter", "event_sectionEnter"],
+          ["sectionExit", "event_sectionExit"]
+        ]
+      },
+      "Libraries" : {
+        "general" : [
+          ["Touchy - custom interaction events", "touchy"],
+          ["Draggy - CSS3 drag functionality", "draggy"],
+          ["Util - JavaScript utility functions", "util"]
+        ]
+      },
+      "Core: Presentation" : {
+        "general" : [
+          ["Introduction to core module: Presentation", "presentation_introduction"],
+          ["Presentation configuration", "presentation_configuration"]
+        ],
+        "properties" : [
+          ["app", "app"],
+          ["app.collection", "app_collection"],
+          ["app.dimensions", "app_dimensions"],
+          ["app.elements", "app_elements"],
+          ["app.inline", "app_inline"],
+          ["app.loaded", "app_loaded"],
+          ["app.slide", "app_slide"],
+          ["app.slideshow", "app_slideshow"]
+        ],
+        "methods" : [
+          ["app.add", "app_add"],
+          ["app.addEvent", "app_add_event"],
+          ["app.getHtml", "app_getHtml"],
+          ["app.getPath", "app_getPath"],
+          ["app.goTo", "app_goTo"],
+          ["app.init", "app_init"],
+          ["app.load", "app_load"],
+          ["app.show", "app_show"]
+        ]
+      },
+      "Core: Slideshow" : {
+        "general" : [
+          ["Introduction to core module: Slideshow", "slideshow_introduction"],
+          ["Running JavaScript when entering or exiting a slide", "slide_methods"],
+          ["Getting elements in slides", "slide_elements"]
+        ],
+        "properties" : [
+          ["app.slideshow", "app_slideshow"],
+          ["app.slideshow.content", "app_slideshow_content"],
+          ["app.slideshow.current", "app_slideshow_current"],
+          ["app.slideshow.currentIndex", "app_slideshow_currentIndex"],
+          ["app.slideshow.ele", "app_slideshow_ele"],
+          ["app.slideshow.id", "app_slideshow_id"],
+          ["app.slideshow.length", "app_slideshow_length"]
+        ],
+        "methods" : [
+          ["app.slideshow.embed", "app_slideshow_embed"],
+          ["app.slideshow.get", "app_slideshow_get"],
+          ["app.slideshow.getIndex", "app_slideshow_getIndex"],
+          ["app.slideshow.next", "app_slideshow_next"],
+          ["app.slideshow.previous", "app_slideshow_previous"],
+          ["app.slideshow.removeEmbedded", "app_slideshow_removeEmbedded"],
+          ["app.slideshow.scrollTo", "app_slideshow_scrollTo"],
+          ["app.slideshow.scrollToEnd", "app_slideshow_scrollToEnd"],
+          ["app.slideshow.scrollToStart", "app_slideshow_scrollToStart"]
+        ]
+      },
+      "Core: Collection" : {
+        "general" : [
+          ["Introduction to core module: Collection", "collection_introduction"]
+        ],
+        "properties" : [
+          ["app.collection", "app_collection"],
+          ["app.collection.content", "app_collection_content"],
+          ["app.collection.current", "app_collection_current"],
+          ["app.collection.currentIndex", "app_collection_currentIndex"],
+          ["app.collection.ele", "app_collection_ele"],
+          ["app.collection.id", "app_collection_id"],
+          ["app.collection.length", "app_collection_length"]
+        ],
+        "methods" : [
+          ["app.collection.get", "app_collection_get"],
+          ["app.collection.getIndex", "app_collection_getIndex"],
+          ["app.collection.next", "app_collection_next"],
+          ["app.collection.previous", "app_collection_previous"],
+          ["app.collection.scrollTo", "app_collection_scrollTo"],
+          ["app.collection.scrollToEnd", "app_collection_scrollToEnd"],
+          ["app.collection.scrollToStart", "app_collection_scrollToStart"]
+        ]
+      },
+      "Core: AutoMenu" : {
+        "general" : [
+          ["Introduction to core module: AutoMenu", "automenu_introduction"]
+        ]
+      },
+      "Core: Slidescroller" : {
+        "general" : [
+          ["Introduction to core module: Slidescroller", "slidescroller_introduction"]
+        ],
+        "methods" : [
+          ["disable", "slidescroller_disable"],
+          ["disableAll", "slidescroller_disableAll"],
+          ["enable", "slidescroller_enable"],
+          ["enableAll", "slidescroller_enableAll"]
+        ]
+      },
+      "Core: View" : {
+        "general" : [
+          ["Introduction to core module: View", "view_introduction"]
+        ]
+      },
+      "Core: debug" : {
+        "general" : [
+          ["Introduction to core module: debug", "debug_introduction"]
+        ]
+      },
+      "Module: Analytics" : {
+        "general" : [
+          ["Introduction to module: Analytics", "analytics_introduction"]
+        ]
+      },
+      "Module: Data" : {
+        "general" : [
+          ["Introduction to module: Data", "data_introduction"]
+        ]
+      },
+      "Module: DynamicAgenda" : {
+        "general" : [
+          ["Introduction to module: Dynamic Agenda", "da_introduction"],
+          ["How to use the bundled interface", "da_interface"]
+        ],
+        "properties" : [
+          ["contentMap", "da_contentMap"],
+          ["data", "da_data"],
+          ["editMode", "da_editMode"],
+          ["hasChanged", "da_hasChanged"],
+          ["name", "da_name"]
+        ],
+        "methods": [
+          ["add", "da_add"],
+          ["clear", "da_clear"],
+          ["create", "da_create"],
+          ["destroy", "da_destroy"],
+          ["edit", "da_edit"],
+          ["get", "da_get"],
+          ["getSlides", "da_getSlides"],
+          ["list", "da_list"],
+          ["remove", "da_remove"],
+          ["reset", "da_reset"],
+          ["show", "da_show"],
+          ["toggle", "da_toggle"],
+          ["update", "da_update"]
+        ]
+      },
+      "Module: SlidePopup" : {
+        "general" : [
+          ["Introduction to module: SlidePopup", "slidepopup_introduction"]
+        ],
+        "properties" : [
+          ["ele", "slidepopup_ele"],
+          ["id", "slidepopup_id"],
+          ["isVisible", "slidepopup_isVisible"],
+          ["slide", "slidepopup_slide"],
+          ["slideEle", "slidepopup_slideEle"]
+        ],
+        "methods" : [
+          ["hide", "slidepopup_hide"],
+          ["show", "slidepopup_show"]
+        ]
+      },
+      "Module: Menu" : {
+        "general" : [
+          ["Introduction to module: Menu", "menu_introduction"]
+        ]
+      },
+      "Module: Thumbnails" : {
+        "general" : [
+          ["Introduction to module: Thumbnails", "thumbnails_introduction"]
+        ]
+      },
+      "Module: Variable Placement" : {
+        "general" : [
+          ["Introduction to module: Variable Placement", "variableplacement_introduction"]
+        ]
+      }
+    }
+  }
+]

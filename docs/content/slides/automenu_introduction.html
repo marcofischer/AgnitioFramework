@@ -1,0 +1,72 @@
+<article id="menu_introduction" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">Introduction to module: AutoMenu</h2>
+    <p>The AutoMenu module will allow you to easily create a presentation, slideshow, or collection menu that is automatically populated with links.</p>
+
+    <table> 
+      <tr>
+        <td colspan="2" class="header">Core Module</td> 
+      </tr> 
+      <tr> 
+        <td>Implemented in</td>
+        <td>v2.1</td>
+      </tr>
+    </table>
+
+    <h3 class="headerWithLine">Requirements</h3>
+    <ul>
+      <li>Presentation type "json"</li>
+      <li>draggy.js</li>
+      <li>touchy.js</li>
+      <li>util.js</li>
+    </ul>
+    
+    <h3 class="headerWithLine">Constructor Syntax</h3>
+		<p><code>app.menu = new AutoMenu(<em>config</em>)</code></p>
+    
+    <h3 class="headerWithLine">Parameters</h3>
+		<dl>
+			<dt><code>config</code> object</dt>
+			<dd>Configuration of the menu.</dd>
+		</dl>
+		
+		<h3 class="headerWithLine">Configuration options</h3>
+		<dl>
+			<dt><code>attachTo</code> array/string</dt>
+			<dd>Names of slideshows or collections to activate the menu when loaded.</dd>
+			<dt><code>offset</code> integer (optional)</dt>
+			<dd>Number of pixels to offset the menu (i.e. to hide links to the left).</dd>
+			<dt><code>offsetLinks</code> integer (optional)</dt>
+			<dd>Number of links to offset the menu in default state. Used instead of <em>offset</em>.</dd>
+      <dt><code>prepend</code> array (optional)</dt>
+      <dd>Objects of links to prepend to the menu.</dd>
+      <dt><code>append</code> array (optional)</dt>
+      <dd>Objects of links to append to the menu.</dd>
+			<dt><code>links</code> object (optional)</dt>
+			<dd>Object used to configure links, i.e. to change the link text or class.</dd>
+		</dl>
+		
+		<h3 class="headerWithLine">Examples</h3>
+
+  	<h4 class="smallHeaderWithLine">Example: Calling <code>new AutoMenu</code> constructor for presentation menu</h4>
+  	<p>The following example will create a presentation menu with no offset. It will run if <em>placebo</em> or <em>efficacy</em> structures are loaded.</p>
+
+  	<pre>
+<code>app.menu = new AutoMenu({
+  attachTo: ['placebo', 'efficacy'],
+  links: {
+    intro: {title:" ", className:"home"},
+    conclusion: {title:"Summary"}
+  }
+});
+</code></pre>
+
+<h3 class="headerWithLine">Changelog</h3>
+<p>Version number refers to module version.</p>
+<dl>
+	<dt><code>2.2</code></dt>
+	<dd>Documentation was added.</dd>
+</dl>
+    
+  </div>
+</article>

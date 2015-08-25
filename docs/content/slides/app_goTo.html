@@ -1,0 +1,50 @@
+<article id="app_goTo" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">app.goTo</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Go to a location in the presentation.</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Core Presentation Method</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v1.0</td>
+			</tr>
+		</table>
+
+		<h3 class="headerWithLine">Syntax</h3>
+		<p><code>app.goTo(<em>name</em>, <em>content</em>, <em>subcontent</em>)</code></p>
+
+		<h3 class="headerWithLine">Parameters</h3>
+		<dl>
+			<dt><code>name</code> string</dt>
+			<dd>Name of slideshow or collection.</dd>
+			<dt><code>content</code> string</dt>
+			<dd>Name of slide or section (slideshow).</dd>
+			<dt><code>subcontent</code> string</dt>
+			<dd>Name of slide (if going to a collection).</dd>
+		</dl>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>app.goTo</code> will allow you to navigate to anywhere within a presentation.</p>
+
+	<p><code>app.goTo</code> will first load a slideshow (if not already loaded), and then scroll to correct slide. This means that <code>onEnter()</code> and <code>onExit()</code> will be called on the first slide of the slideshow.</p>
+
+	<h3 class="headerWithLine">Examples</h3>
+
+	<h4 class="smallHeaderWithLine">Example: <code>app.goTo</code> to navigate to slide 'third_slide' in 'demo' slideshow.</h4>
+	<p>The following example will load the slideshow 'demo', and then scroll to the slide with the name 'third_slide'.</p>
+<pre>
+<code>app.goTo('demo', 'third_slide');</code>
+</pre>
+
+<h4 class="smallHeaderWithLine">Example: <code>app.goTo</code> to navigate to slide 'third_slide' in 'chapter_4' section, of the 'demo' collection.</h4>
+<p>The following example will load the collection 'demo', then scroll to the section 'chapter_4', and then scroll to the slide with the name 'third_slide'.</p>
+<pre>
+<code>app.goTo('demo', 'chapter_4', 'third_slide');</code>
+</pre>
+</article>

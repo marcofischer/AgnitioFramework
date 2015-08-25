@@ -1,0 +1,36 @@
+<article id="app_collection_get" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">app.collection.get</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Get the HTML element of a slide.</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Core Collection Method</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v1.0</td>
+			</tr>
+		</table>
+
+		<h3 class="headerWithLine">Syntax</h3>
+		<p><code>app.collection.get(sectionId)</code></p>
+
+		<h3 class="headerWithLine">Parameters</h3>
+		<dl>
+			<dt><code>sectionId</code> string</dt>
+			<dd>The id of the section. OPTIONAL</dd>
+		</dl>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>app.collection.get</code> will return the HTML element of a section. If a parameter is given it will try to get the element corresponding to the id, and if no parameter is given then it will get the element of the current section.</p>
+
+	<p><code>app.collection.get</code> is a simple wrapper for document.getElementById(sectionId).</p>
+
+<h3 class="headerWithLine">See Also</h3>
+<p><a href="content/slides/app_collection_getIndex.html">app.collection.getIndex</a></p>
+
+</article>

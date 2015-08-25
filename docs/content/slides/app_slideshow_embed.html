@@ -1,0 +1,65 @@
+<article id="app_slideshow_embed" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">app.slideshow.embed</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Embed another slideshow within a slide.</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Core Slideshow Method</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v2.2</td>
+			</tr>
+		</table>
+
+		<h3 class="headerWithLine">Syntax</h3>
+		<p><code>app.slideshow.embed(slideshowId, container, scroll)</code></p>
+
+		<h3 class="headerWithLine">Parameters</h3>
+		<dl>
+			<dt><code>slideshowId</code> string</dt>
+			<dd>Id of the slideshow to embed in the slide.</dd>
+			<dt><code>container</code> DOM element</dt>
+			<dd>Element of the container where the slideshow should be inserted.</dd>
+			<dt><code>scroll</code> boolean</dt>
+			<dd>If the a scroller (swipes) should be created for the embedded slideshow. OPTIONAL</dd>
+		</dl>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>app.slideshow.embed</code> allows one to embed another slideshow within the slide. Several slideshows can be embedded in a slide.</p>
+
+	<p><code>app.slideshow.embed</code> is normally called from the slide's <code>onEnter</code> method.</p>
+
+	<p><strong>NOTE:</strong> <code>app.slideshow.removeEmbedded()</code> need to be called to remove embedded slideshows in a slide. This is normally done from the slide's <code>onExit</code> method.</p>
+	
+	<h3 class="headerWithLine">Examples</h3>
+
+	<h4 class="smallHeaderWithLine">Example: <code>app.slideshow.embed</code> to embed a slideshow in a slide.</h4>
+	<p>The following example will embed a slidehow with id "MoA" in the slide with id "efficacy".</p>
+
+<pre>
+	<code>(function() {
+	  var slide = app.slide.efficacy = {
+	    elements: {
+	      moa: "#moaContainer"
+	    },
+	    onEnter: function(ele) {
+	      // Embedd MoA slideshow with scroller
+	      app.slideshow.embed('MoA', slide.element.moa, true);
+	    },
+	    onExit: function(ele) {
+	    	// Remove embedded slideshows
+	    	app.slideshow.removeEmbedded();
+	    }
+	  }
+	})();</code>
+</pre>
+
+    <h3 class="headerWithLine">See Also</h3>
+    <p><span data-file="app_slideshow_removeEmbedded">app.slideshow.removeEmbedded</span></p>
+  </div>
+</article>

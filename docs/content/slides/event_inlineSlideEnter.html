@@ -1,0 +1,27 @@
+<article id="event_inlineSlideEnter" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">Event: inlineSlideEnter</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Event called when an inline slide is entered</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Custom Event</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v1.0</td>
+			</tr>
+		</table>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>inlineSlideEnter</code> is dispatched every time a slide is entered in an inline slideshow. When the event is dispatched the property <code>app.inline.current</code> will contain the name of the entered slide.</p>
+
+	<p><code>event.target</code> will be the slide element. The name of the inline slide will be available through <code>app.inline.current</code>.</p>
+	
+	<p><strong>Note:</strong> The normal slideshow events <code>slideEnter</code> and <code>slideExit</code> will not be called when shifting slides in an inline slideshow. The slide methods <code>onEnter()</code> and <code>onExit()</code> will be called however.</p>
+	
+	</div>
+</article>

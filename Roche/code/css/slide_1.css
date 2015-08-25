@@ -1,0 +1,21 @@
+#intro .frontpage-list{
+ 
+}
+
+@media all and (orientation:portrait) {
+
+}
+
+@media all and (orientation:landscape) {
+
+    #slide_1 .basic {
+background-color: #CCC;
+    }
+
+    h1 {
+    color: #FFF;    
+    font-family: AntiPasto, Arial, sans-serif;
+    }
+
+
+}

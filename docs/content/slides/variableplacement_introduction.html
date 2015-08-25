@@ -1,0 +1,91 @@
+<article id="variableplacement_introduction" class="slide">
+  <div class="content">
+    <h2 class="slideHeader">Introduction to module: Variable Placement</h2>
+    <p>The Variable Placement module will allow you to position elements depending on what platform is currently hosting the content.</p>
+    <p>The module will be applied if the content is running in a native app (iOS only) that is not released by Agnitio. It is intended to be used with content that will run on the Agnitio platform AND another platform where there are native elements taking up parts of the screen.</p>
+
+    <table> 
+      <tr>
+        <td colspan="2" class="header">Module</td> 
+      </tr> 
+      <tr> 
+        <td>Implemented in</td>
+        <td>v2.4.1</td>
+      </tr>
+    </table>
+    
+    <h3 class="headerWithLine">Requirements</h3>
+    <ul>
+      <li>agnitio.js</li>
+    </ul>
+
+    <h3 class="headerWithLine">Script reference</h3>
+    <p>The module should be placed in the <strong>modules</strong> folder and then the following need to be added to <strong>index.html</strong>:</p>
+    <pre>
+<code>&lt;script src=”modules/variable-placement/variable-placement.js”&gt;&lt;/script&gt;
+</code></pre>
+
+    
+    <h3 class="headerWithLine">Constructor Syntax</h3>
+    <p><code>app.variablePlacement.init(<em>rules</em>, <em>moveMenu</em>)</code></p>
+    
+    <h3 class="headerWithLine">Parameters</h3>
+    <dl>
+      <dt><code>rules</code> array</dt>
+      <dd>Instructions to the module what elements to move and how.</dd>
+      <dt><code>moveMenu</code> boolean [true]</dt>
+      <dd>A flag to set if the module should try to find the main menu and move it.</dd>
+    </dl>
+    
+    <h3 class="headerWithLine">Rules</h3>
+    <p>A rule is an object that includes instructions on how to find and move elements.</p>
+    <p>The rule will always include a query string that will be used to find the element. Additionaly, either a CSS property and its value or a class name will be included.</p>
+    <dl>
+      <dt><code>query</code></dt>
+      <dd>A query string to find elements. Same format as given to <code>querySelector</code>.</dd>
+      <dt><code>property</code></dt>
+      <dd>A valid CSS style property. Will normally be either <strong>left</strong> or <strong>margin-left</strong>.</dd>
+      <dt><code>value</code></dt>
+      <dd>The value to set to the above property. Should include the unit, e.g. "150px".</dd>
+      <dt><code>classname</code></dt>
+      <dd>A classname to assign to the element(s) found.</dd>
+    </dl>
+
+    <p>See the second example below to understand how these are set.</p>
+
+    <h3 class="headerWithLine">Moving Main Menu</h3>
+    <p>By default the module will try to find the presentation menu and move it 150px to the left (absolute positioning assumed). This is the most common usecase for using this module and is therefor provided out of the box.</p>
+    <p>For this to work the menu should have the id <strong>mainmenu</strong>, which is the default used by Agnitio menu modules.</p>
+    <p>If another id is used for the menu, or another distance is desired then set the <code>moveMenu</code> parameter to <strong>false</strong> and provide a specific rule for the menu.</p> 
+    
+    <h3 class="headerWithLine">Examples</h3>
+
+    <h4 class="smallHeaderWithLine">Example: Initializing <code>Variable Placement</code> without rules</h4>
+    <p>The following example will try to find the menu and move it 150px from the left.</p>
+
+    <pre>
+<code>app.variablePlacement.init();
+</code></pre>
+
+<h4 class="smallHeaderWithLine">Example: Initializing <code>Variable Placement</code> with two rules</h4>
+<p>The following example will try to find the main menu AND two elements and move them. One by setting the style property directly on the element, and the other by adding a class to the element (the class should be defined in a CSS file).</p>
+
+<pre>
+<code>app.variablePlacement.init([
+  {query: ".platform2", property: "margin-left", value: "150px"},
+  {query: "#references", classname: "left-150"}
+]);
+</code></pre>
+
+<h4 class="smallHeaderWithLine">Example: Initializing <code>Variable Placement</code> to not look for menu</h4>
+<p>The following example is the same as the above except that it will not try to find the main menu (the addition of the second paramenter <code>false</code>).</p>
+
+<pre>
+<code>app.variablePlacement.init([
+  {query: ".platform2", property: "margin-left", value: "150px"},
+  {query: "#references", classname: "left-150"}
+], false);
+</code></pre>
+    
+  </div>
+</article>

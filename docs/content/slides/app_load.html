@@ -1,0 +1,51 @@
+<article id="app_load" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">app.load</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Loads a slideshow or collection into current view.</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Core Presentation Method</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v1.0</td>
+			</tr>
+		</table>
+
+		<h3 class="headerWithLine">Syntax</h3>
+		<p><code>app.load(<em>name</em>, <em>skipScroll</em>)</code></p>
+
+		<h3 class="headerWithLine">Parameters</h3>
+		<dl>
+			<dt><code>name</code> string</dt>
+			<dd>Name of slideshow or collection.</dd>
+			<dt><code>skipScroll</code> boolean (defaults to false)</dt>
+			<dd>If to skip scrolling to the first slide of the slideshow or collection.</dd>
+		</dl>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>app.load</code> will replace the current content in view with the slideshow or collection given as parameter.</p>
+
+	<p>Calling <code>app.load</code> with an undefined slideshow- or collection name will unload current content and generate a JavaScript error.</p>
+	
+	<p><code>app.load</code> is used by <a href="?app_init">app.init</a> when loading the presentation.</p>
+
+	<h3 class="headerWithLine">Examples</h3>
+
+	<h4 class="smallHeaderWithLine">Example: <code>app.load</code> of a slideshow with name 'demo'</h4>
+	<p>The following example will open the slideshow 'demo' if it exist, or break the presentation if it doesn't</p>
+
+	<pre><code>app.load('demo');</code></pre>
+	
+	<h3 class="headerWithLine">Changelog</h3>
+	<p>Version number refers to framework version.</p>
+	<dl>
+		<dt><code>2.0</code></dt>
+		<dd>The second parameter <code>type</code> was removed and <code>skipScroll</code> was added. As type is now handled internally in the framework this change will not break code built on version 1.0 of the framework.</dd>
+	</dl>
+
+</article>

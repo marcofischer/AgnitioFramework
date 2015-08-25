@@ -1,0 +1,330 @@
+#studies .content{
+    position: relative;
+    margin-left: 102px;
+}
+
+#studies .graph{
+    margin-top:30px;
+    background: url(../../content/img/studies/sub-x-axis.png) 21px 323px no-repeat,
+    url(../../content/img/studies/sub-y-axis.png) -15px 22px no-repeat,
+    url(../../content/img/studies/sub-lines-new.png) 4px 3px no-repeat;
+    width:585px;
+    height:445px;
+}
+
+#studies .signs{
+    position: absolute;
+    bottom:-45px;
+    left: 25px;
+    height: 50px;
+    width: 620px;
+    font-size: 12px;
+    color: #70757A;
+}
+
+#studies .np-sign,
+#studies .p-sign{
+    position:absolute;
+    width: 153px;
+    margin: 0 10px;
+    padding-left: 18px;
+    opacity:1;
+}
+
+#studies .np-sign{
+    left:190px;
+    background:url('../../content/img/studies/sub-g-sign.png') no-repeat 0 5px;
+}
+
+#studies .p-sign{
+    left:0px;
+    background:url('../../content/img/studies/sub-v-sign.png') no-repeat 0 5px;
+}
+
+#studies .hr{
+    background: url('../../content/img/studies/sub-HR.png');
+    height: 15px;
+    left: 423px;
+    position: absolute;
+    top: 47px;
+    width: 142px;
+}
+
+#studies #y_small{
+    background: url(../../content/img/studies/sub-y-small.png) no-repeat 22px 100%;
+    height: 233px;
+    left: 600px;
+    position: absolute;
+    top: 1px;
+    width: 320px;
+    z-index: 3;
+}
+
+#studies #y_small.active{
+    background: url(../../content/img/studies/sub-y-small-2.png) no-repeat 1px 100%;
+}
+
+#small_y_text{
+    color:#58595B;
+    font-size:12px;
+    margin-left:12px;
+}
+
+#studies #not_placebo_bar{
+    background: -webkit-gradient(linear, 100% 100%, 0% 0%, from(rgba(240,255,196, 1)), to(rgba(166,198,70, 1)));
+    background: -ms-linear-gradient(top, #f0ffc4 0%,#a6c646 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #f0ffc4 0%,#a6c646 100%);
+    position:absolute;
+    left: 65px;
+    width: 70px;
+    height: 43px;
+    bottom: 4px;
+    z-index: 3;
+}
+
+#studies .np-bar-top{
+    position: absolute;
+    top: -12px;
+    width: 71px;
+    height: 12px;
+    background: -webkit-gradient(linear, 100% 100%, 0% 0%, from(rgba(166, 198, 70, 1)), to(rgba(166, 198, 70, 1)));
+    background: -ms-linear-gradient(top, #a6c646 0%,#a6c646 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #a6c646 0%,#a6c646 100%);
+    -webkit-transform: skewX(-48deg);
+    -moz-transform: skewX(-48deg);
+    -ms-transform: skewX(-48deg);
+    transform: skewX(-48deg);
+    left: 7px;
+}
+
+#studies .np-bar-side{
+    position: absolute;
+    top: -6px;
+    width: 15px;
+    height: 100%;
+    background: -webkit-gradient(linear, 100% 100%, 0% 0%, from(rgba(166, 198, 70, 1)), to(rgba(166, 198, 70, 1)));
+    background: -ms-linear-gradient(top, #a6c646 0%,#a6c646 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #a6c646 0%,#a6c646 100%);
+    -webkit-transform: skewY(-40deg);
+    -moz-transform: skewY(-40deg);
+    -ms-transform: skewY(-40deg);
+    transform: skewY(-40deg);
+    left: 69px;
+}
+
+#studies #placebo_bar{
+    background: -webkit-gradient(linear, 100% 100%, 0% 0%, from(rgba(207,241,255, 1)), to(rgba(23,165,221, 1)));
+    background: -ms-linear-gradient(top, #cff1ff 0%,#17a5dd 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #cff1ff 0%,#17a5dd 100%);
+    position:absolute;
+    left: 160px;
+    width: 70px;
+    height: 60px;
+    bottom: 4px;
+    z-index: 3;
+}
+
+#studies .p-bar-top{
+    position: absolute;
+    top: -12px;
+    width: 71px;
+    height: 12px;
+    background: -webkit-gradient(linear, 100% 100%, 0% 0%, from(rgba(23, 165, 221, 1)), to(rgba(23, 165, 221, 1)));
+    background: -ms-linear-gradient(top, #17a5dd 0%,#17a5dd 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #17a5dd 0%,#17a5dd 100%);
+    -webkit-transform: skewX(-48deg);
+    -moz-transform: skewX(-48deg);
+    -ms-transform: skewX(-48deg);
+    transform: skewX(-48deg);
+    left: 7px;
+}
+
+#studies .p-bar-side{
+    position: absolute;
+    top: -6px;
+    width: 15px;
+    height: 100%;
+    background: -webkit-gradient(linear, 100% 100%, 0% 0%, from(rgba(23, 165, 221, 1)), to(rgba(23, 165, 221, 1)));
+    background: -ms-linear-gradient(top, #17a5dd 0%,#17a5dd 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #17a5dd 0%,#17a5dd 100%);
+    -webkit-transform: skewY(-40deg);
+    -moz-transform: skewY(-40deg);
+    -ms-transform: skewY(-40deg);
+    transform: skewY(-40deg);
+    left: 69px;
+}
+
+#studies #placebo_bar,
+#studies #not_placebo_bar{
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+#studies #pop_box_y50,
+#studies #pop_box_x12,
+#studies #pop_box_x24,
+#studies #vert_dash,
+#studies #hori_dash,
+#studies #digit{
+    position:absolute;
+    opacity:1;
+}
+
+#studies #x_drag,
+#studies #y_drag{
+    position:absolute;
+    visibility:visible;
+}
+
+#studies #hpole,
+#studies #pole{
+    position:absolute;
+    opacity:0.5;
+}
+
+#studies #pop_box_y50{
+    background: url(../../content/img/studies/hint-blue1.png) no-repeat;
+    width: 165px;
+    height: 116px;
+    top: 80px;
+    left: 175px;
+    z-index: 2;
+}
+
+#xActive {
+    display:none;
+}
+
+#studies #pop_box_x12{
+    background: url(../../content/img/studies/hint-blue12.png);
+    width: 230px;
+    height: 116px;
+    top: 52px;
+    left: 165px;
+    opacity:0;
+    z-index: 2;
+}
+
+#studies #pop_box_x24{
+    background: url(../../content/img/studies/hint-blue24.png);
+    width: 230px;
+    height: 116px;
+    top: 141px;
+    left: 312px;
+    opacity:0;
+    z-index: 2;
+}
+
+#hpole{
+    background: -webkit-gradient(linear, 100% 0%, 0% 0%, from(rgba(32, 202, 253, 0.449219)), to(rgba(32, 202, 253, 0.0898438)));
+    background: -ms-linear-gradient(top, rgba(32,202,253,0.45) 0%,rgba(32,202,253,0.09) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(32,202,253,0.45) 0%,rgba(32,202,253,0.09) 100%);
+    width: 147px;
+    height: 40px;
+    bottom: 240px;
+    left: 35px;
+    opacity:0;
+}
+#hpole.xAt24 {
+    opacity: 1;
+    bottom: 151px;
+    left: 35px;
+    width: 292px;
+}
+#studies #pole{
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(32, 202, 253, 0.449219)), to(rgba(32, 202, 253, 0.0898438)));
+    background: -ms-linear-gradient(top, rgba(32,202,253,0.45) 0%,rgba(32,202,253,0.09) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(32,202,253,0.45) 0%,rgba(32,202,253,0.09) 100%);
+    width: 49px;
+    height: 150px;
+    bottom: 108px;
+    left: 160px;
+}
+#studies #digit{
+    bottom: 112px;
+    left: 127px;
+    word-spacing: 48px;
+    font-size: 17px;
+    color: #70757A;
+}
+#studies #x_drag{
+    background: url(../../content/img/studies/arrowup.png) no-repeat;
+    top: 368px;
+    left: 11px;
+    width: 49px;
+    height: 52px;
+}
+
+#studies #y_drag{
+    background: url(../../content/img/studies/arrowright.png) no-repeat;
+    top: 159px;
+    left: -56px;
+    width: 52px;
+    height: 49px;
+}
+
+#studies #vert_dash{
+    height: 294px;
+    width: 1px;
+    border-left: 1px dashed #70757A;
+    bottom: 112px;
+    left: 34px;
+    opacity:1;
+}
+
+#studies #hori_dash{
+    width: 546px;
+    height: 1px;
+    border-top: 1px dashed #70757A;
+    top: 186px;
+    left: 37px;
+}
+
+#studies .graph-mask{
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    width: 549px;
+    height: 300px;
+}
+
+#studies .big-y-text{
+    position: absolute;
+    font-size:16px;
+    left:0px;
+    top:7px;
+    color:#58595B;
+}
+#studies .big-x-text{
+    position: absolute;    
+    font-size: 16px;
+    top: 344px;
+    left: 529px;
+    color: #58595B;
+}
+
+#studies .pop-box-text{
+    color:white;
+    text-shadow: 2px 2px 2px #333;
+    margin-top: 57px;
+    margin-left: 41px;
+}
+
+@media all and (orientation:portrait) {
+    #studies #y_small{
+        left:-18px;
+        top:495px;
+    }
+
+    #studies .signs{
+        bottom: -52px;
+    }
+
+    #studies h1 {
+        margin-top: 20px;
+        width: 720px; 
+        margin-left: 40px;
+    }
+}

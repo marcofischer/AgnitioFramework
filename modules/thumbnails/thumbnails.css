@@ -1,0 +1,68 @@
+.thumbnails {
+    border-top:1px solid #d2d2d2;
+    border-bottom:1px solid #d2d2d2;
+    display:-webkit-box;
+    -webkit-box-orient:horizontal;
+    z-index:3;
+    height: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 100%;
+    -webkit-transform: rotate(360deg);
+    -webkit-transition: all linear 0.3s;
+    -webkit-user-select:none;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+.thumbnails.active {
+    height: 150px;
+}
+
+.thumbnails .thumbs-arrow {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #828282 transparent;
+    position: absolute;
+    top:5px;
+    left:50%;
+    margin-left: -10px;
+}
+.thumbnails.active .thumbs-arrow {
+    border-width: 10px 10px 0 10px;
+    border-color: #828282 transparent transparent transparent;
+}
+
+.thumbnails ul {
+    list-style: none;
+    height: 100%;
+}
+
+.thumbnails li {
+    display: inline-block;
+    list-style: none;
+    padding: 15px 15px 15px 20px;
+    margin-top: 10px;
+    /*border-right: 1px solid gray;*/
+    pointer-events:auto;
+}
+
+.thumbnails li img{
+    opacity: 0.4;
+    -webkit-opacity: 0.4;
+    -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+    user-drag: none;
+}
+
+.thumbnails li.selected  img{
+    opacity: 1;
+    -webkit-opacity: 1;
+}

@@ -1,0 +1,49 @@
+<article id="app_getHtml" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">app.getHtml</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Get HTML markup as a string.</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Core Presentation Method</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v1.0</td>
+			</tr>
+		</table>
+
+		<h3 class="headerWithLine">Syntax</h3>
+		<p><code>app.getHtml(<em>name</em>, <em>path</em>, <em>callback</em>)</code></p>
+
+		<h3 class="headerWithLine">Parameters</h3>
+		<dl>
+			<dt><code>name</code> string</dt>
+			<dd>Name of file excluding file extension.</dd>
+			<dt><code>path</code> string</dt>
+			<dd>Path to folder where file is located relative to index file. Defaults to 'content/slides/'.</dd>
+			<dt><code>callback</code> function</dt>
+			<dd>Function to be called if retrieval of HTML is successful.</dd>
+		</dl>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>app.getHtml</code> will use a XMLHttpRequest to read the markup of a HTML file.</p>
+
+	<p><code>app.getHtml</code> can be used to retrieve any HTML markup from anywhere within the presentation. This makes it easy to load content on-demand.</p>
+	
+	<p><code>app.getHtml</code> is used internally by the framework to get markup of the slides when a slideshow or collection is loaded.</p>
+
+	<h3 class="headerWithLine">Examples</h3>
+
+	<h4 class="smallHeaderWithLine">Example: <code>app.getHtml</code> to fetch the markup of slide 'content/popups/extras.html'</h4>
+	<p>The following example will retrieve the markup of extras.html and save it (to localStorage) as a string.</p>
+
+<pre>
+<code>app.getHtml('extras',
+            'content/popups/',
+            function(data) { localStorage.extras = data; });</code>
+</pre>
+</article>

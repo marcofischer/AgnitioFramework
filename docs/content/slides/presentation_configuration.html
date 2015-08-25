@@ -1,0 +1,32 @@
+<article id="presentation_configuration" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">Presentation configuration</h2>
+    <p>When initializing presentation in <em>setup.js</em>, it is possible to add some configuration options. You'll see a list below with possible values and an explanation for each.</p>
+    
+    <h3>Configuration options</h3>
+    <dl>
+      <dt><code>type</code></dt>
+      <dd>Either <strong>dynamic</strong> [default] or <strong>json</strong></dd>
+      <dt><code>orientation</code></dt>
+      <dd>Either <strong>landscape</strong> [default] or <strong>portrait</strong></dd>
+      <dt><code>pathToSlides</code></dt>
+      <dd>Used to set custom path to slides, i.e. "content/slides/"</dd>
+      <dt><code>globalElements</code></dt>
+      <dd>Ids of DOM elements that should be accessible throughout presentation. Elements accessible through app.elements[id]</dd>
+      <dt><code>manageMemory</code></dt>
+      <dd>Either true or false [default]</dd>
+      <dt><code>slideshows</code></dt>
+      <dd>A JavaScript object mapping an array of slide ids to a slideshow name</dd>
+      <dt><code>collections</code></dt>
+      <dd>A JavaScript object mapping an array of slideshow ids to a collection name</dd>
+    </dl>
+    
+    <h3 class="headerWithLine">Changelog</h3>
+  	<p>Version number refers to framework version.</p>
+  	<dl>
+  		<dt><code>2.0</code></dt>
+  		<dd>The following configuration options were added: <code>globalElements</code>, <code>pathToSlides</code></dd>
+  	</dl>
+    
+  </div>
+</article>

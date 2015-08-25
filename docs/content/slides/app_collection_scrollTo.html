@@ -1,0 +1,52 @@
+<article id="app_collection_scrollTo" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">app.collection.scrollTo</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Navigate to a section in the active collection.</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Core Collection Method</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v1.0</td>
+			</tr>
+		</table>
+
+		<h3 class="headerWithLine">Syntax</h3>
+		<p><code>app.collection.scrollTo(slide)</code></p>
+
+		<h3 class="headerWithLine">Parameters</h3>
+		<dl>
+			<dt><code>slide</code> string/number</dt>
+			<dd>Id or number (order) of the section.</dd>
+		</dl>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>app.collection.scrollTo</code> will move to the section supplied as parameter, if it is available. It will only navigate within a collection, for navigating to sections in other collections use <code>app.goTo</code>.</p>
+
+	<p><code>app.collection.scrollTo</code> accepts either the section id, or the section order number (in the active collection) as parameter.</p>
+	
+	<h3 class="headerWithLine">Examples</h3>
+
+	<h4 class="smallHeaderWithLine">Example: <code>app.collection.scrollTo</code> to navigate to a section using its id.</h4>
+	<p>The following example will move to the section with the id 'chapter_3' if it is available in the active collection.</p>
+
+<pre>
+<code>app.collection.scrollTo('chapter_3');</code>
+</pre>
+
+<h4 class="smallHeaderWithLine">Example: <code>app.collection.scrollTo</code> to navigate to a section using its order number.</h4>
+<p>The following example will move to the fourth section in the active collection (ordering is 0-based).</p>
+
+<pre>
+<code>app.collection.scrollTo(5);</code>
+</pre>
+
+<h3 class="headerWithLine">See Also</h3>
+<p><a href="content/slides/app_goTo.html">app.goTo</a></p>
+
+</article>

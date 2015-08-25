@@ -1,0 +1,42 @@
+<article id="app_add_event" class="slide">
+  <div class="content">
+    <h2 class="slideHeader">app.addEvent</h2>
+
+    <h3 class="headerWithLine">Summary</h3>
+    <p>Add slide-specific event listener, which will be automatically cleaned up.</p>
+
+    <table> 
+      <tr>
+        <td colspan="2" class="header">Core Presentation Method</td> 
+      </tr> 
+      <tr> 
+        <td>Implemented in</td>
+        <td>v2.1</td>
+      </tr>
+    </table>
+
+    <h3 class="headerWithLine">Syntax</h3>
+    <p><code>app.addEvent(<em>eventType</em>, <em>callback</em>, <em>attachTo</em>)</code></p>
+
+    <h3 class="headerWithLine">Parameters</h3>
+    <dl>
+      <dt><code>eventType</code> string</dt>
+      <dd>Type of event to listen to.</dd>
+      <dt><code>callback</code> function</dt>
+      <dd>Function to call when event is fired.</dd>
+      <dt><code>attachTo</code> element</dt>
+      <dd>DOM element which the listener should be added to. Defaults to <em>document</em></dd>
+    </dl>
+
+  <h3 class="headerWithLine">Description</h3>
+
+  <p><code>app.addEvent</code> should be used when adding event listeners to slides. The framework will add an event listener which will be automatically cleaned up when exiting the slide.</p>
+
+  <h3 class="headerWithLine">Examples</h3>
+
+  <h4 class="smallHeaderWithLine">Example: <code>app.addEvent</code> to add an event listener</h4>
+  <p>The following example will add an event listener for a click on a button.</p>
+
+  <pre><code>app.addEvent('tap', this.handleBtnClick, this.demoBtn);</code></pre>
+
+</article>

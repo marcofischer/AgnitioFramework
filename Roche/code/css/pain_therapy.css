@@ -1,0 +1,200 @@
+#pain_therapy {
+    color: #58595B;
+}
+#pain_therapy #bubble_tag {
+    width: 268px;
+    height: 62px;
+    position: absolute;
+    left: 376px;
+    top: 269px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#B5BBBD), to(#6A7275));
+    background: -ms-linear-gradient(top, #B5BBBD 0%,#6A7275 100%);
+    background: linear-gradient(to bottom, #B5BBBD 0%, #6A7275 100%);
+    -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+    -ms-box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    padding-top: 30px;
+}
+#mol_block3,#mol_block2,#mol_block1{
+    font-size: 20px;
+    margin:0 auto;
+}
+#mol_block1 {
+    margin-top: 13px;
+}
+
+#mol_block2 {
+    margin-top: 50px;
+}
+#mol_block3 {
+    margin-top: 45px;
+}
+
+#pain_therapy #bubble {
+    width: 214px;
+    height: 215px;
+    background: url("../../content/img/pain_therapy/ball.png") no-repeat;
+    position: absolute;
+    top: 83px;
+    left: 400px;
+}
+#pain_therapy #list {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 370px;
+    font-size: 24px;
+    text-align: center;
+}
+#pain_therapy h1{
+    width: 600px;
+}
+
+#list .marker-1, #list .marker-2 {
+    position: absolute;
+    left: 50%;
+    margin-left: -29px;
+}
+
+#list .marker-1 {
+    top: 26px;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+}
+#list .marker-2 {
+    top: 93px;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+}
+#list span {
+    display: block;
+    margin-bottom: 32px;
+}
+
+#pain_therapy #bubble_tag,
+#pain_therapy #bubble,
+#pain_therapy #mol_block1,
+#pain_therapy .marker-1,
+#pain_therapy #mol_block2,
+#pain_therapy .marker-2,
+#pain_therapy #mol_block3{
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    opacity: 0;
+}
+
+#pain_therapy .marker-1,
+#pain_therapy .marker-2{
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+#pain_therapy .active #bubble_tag,
+#pain_therapy .active #bubble,
+#pain_therapy .active #mol_block1,
+#pain_therapy .active .marker-1,
+#pain_therapy .active #mol_block2,
+#pain_therapy .active .marker-2,
+#pain_therapy .active #mol_block3{
+    opacity: 1;
+}
+
+#pain_therapy .active #bubble_tag,
+#pain_therapy .active #bubble{
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    transition-delay: 1s;
+}
+
+#pain_therapy .active #mol_block1{
+    -webkit-transition-delay: 1.5s;
+    -moz-transition-delay: 1.5s;
+    -ms-transition-delay: 1.5s;
+    transition-delay: 1.5s;
+}
+
+#pain_therapy .active .marker-1{
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    -ms-transition-delay: 2s;
+    transition-delay: 2s;
+}
+
+#pain_therapy .active #mol_block2{
+    -webkit-transition-delay: 2.5s;
+    -moz-transition-delay: 2.5s;
+    -ms-transition-delay: 2.5s;
+    transition-delay: 2.5s;
+}
+
+#pain_therapy .active .marker-2{
+    -webkit-transition-delay: 3s;
+    -moz-transition-delay: 3s;
+    -ms-transition-delay: 3s;
+    transition-delay: 3s;
+}
+
+#pain_therapy .active #mol_block3{
+    -webkit-transition-delay: 3.5s;
+    -moz-transition-delay: 3.5s;
+    -ms-transition-delay: 3.5s;
+    transition-delay: 3.5s;
+}
+
+
+
+@media all and (orientation:portrait) {
+    #pain_therapy #bubble {
+        top: 175px;
+        left: 279px;
+    }
+    #pain_therapy #bubble_tag {
+        width: 317px;
+        height: 71px;
+        position: absolute;
+        left: 225px;
+        top: 349px;
+        font-size: 25px;
+        color: white; 
+        padding-top: 41px;
+    }
+    #mol_block1 {
+        margin-top: 105px;
+    }
+    #mol_block3, #mol_block2, #mol_block1 {
+        font-size: 24px;
+        padding: 0 40px;
+    }
+    #mol_block3, #mol_block2 {
+        margin-top: 107px;
+    }
+    #list .marker-1 {
+        top: 169px;
+        left: 386px;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+    #list .marker-2 {
+        top: 299px;
+        left: 386px;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}

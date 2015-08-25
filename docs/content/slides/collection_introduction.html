@@ -1,0 +1,18 @@
+<article id="collection_introduction" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">Introduction to core module: Collection</h2>
+    <p>The Collection module directly inherits from the Slideshow module but instead of keeping track of slides it keeps track of slideshows that are loaded together. The API methods are the same as for slideshows but they are accessed from the <code>app.collection</code> namespace.</p>
+    
+    <p>The Collection constructor is used internally by the presentation and not called directly. To add a collection not defined in the configuration of the Presentation constructor, the method <code>app.add</code> should be used.</p>
+    
+    <h3>Custom events</h3>
+    <p>The Collection module dispatches the following events:</p>
+    <ul>
+      <li><code>collectionLoad</code></li>
+      <li><code>collectionUnload</code></li>
+      <li><code>sectionEnter</code></li>
+      <li><code>sectionExit</code></li>
+    </ul>
+    
+  </div>
+</article>

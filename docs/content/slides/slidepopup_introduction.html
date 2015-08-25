@@ -1,0 +1,32 @@
+<article id="slidepopup_introduction" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">Introduction to module: SlidePopup</h2>
+    <p>The SlidePopup module is a simple but powerful module that allow one to fetch a slide at any time and display it on top of the active slideshow. The underlying slideshow is not affected and when the slidepopup is closed you return to the same state as before. The slide methods <code>onEnter()</code> and <code>onExit()</code> will be called when showing and hiding the popup.</p>
+    
+    <p>It is possible to create as many slidepopups as needed.</p>
+    
+    <h3>Custom events</h3>
+    <p>The SlidePopup module will dispatch the following events:</p>
+    <ul>
+      <li><code>slidePopupLoad</code></li>
+      <li><code>slidePopupUnload</code></li>
+    </ul>
+    
+    <h3>Popup content</h3>
+    <p>The SlidePopup module will fetch its content in <em>content/slides/</em> when calling the <code><a href="?slidepopup_show">show</a></code> instance method.</p>
+    
+    <h3>Limitations</h3>
+    <p>It is not possible to open a slide that is already part of the active slideshow (the slideshow being viewed).</p>
+    
+    <h3>Constructor</h3>
+    <p>A slide popup is create by calling <code>new SlidePopup</code> with an id paramater.</p>
+    
+    	<h3 class="headerWithLine">Examples</h3>
+
+    	<h4 class="smallHeaderWithLine">Example: creating a new slide popup by calling <code>new Slidepopup</code>.</h4>
+    	<p>The following example will create a new slide popup using the DOM element with id 'slidePopup' as container (the DOM element containing the loaded slide).</p>
+
+<pre><code>app.slidePopup = new SlidePopup('slidePopup');</code></pre>
+    
+  </div>
+</article>

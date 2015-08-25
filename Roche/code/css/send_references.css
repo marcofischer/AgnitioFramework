@@ -1,0 +1,136 @@
+#send_references .emphasizing-line {
+    width: 700px;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+}
+
+#checkboxes_email li input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 1px;
+    background: transparent;
+    margin-bottom: 19px;
+    margin-left: 5px;
+    border: solid 1px #AAA;
+    position: relative;
+}
+
+#checkboxes_email li input[type="radio"]:checked::after {
+    content: url("../../content/img/ref_check.png");
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+#checkboxes_email{
+    position:absolute;
+    top: 77px;
+    left: 95px;
+    margin-bottom:100px;
+}
+
+#send_button{
+    width: 103px;
+    height: 33px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#15B6E3), color-stop(100%,#0D89CD));
+    background: -ms-linear-gradient(top, rgba(21,182,227,1) 0%,rgba(13,137,205,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(21,182,227,1) 0%,rgba(13,137,205,1) 100%);
+    border-radius: 7px;
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    text-align: center;
+    padding-top: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+#send_pdf_form {
+    position:absolute;
+    bottom: 100px;
+    width: 335px;
+    padding-left: 100px;
+}
+
+#send_pdf_form input {
+    border: 1px solid #878787;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    padding: 8px 15px;
+    width: 300px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+/*#select_email{
+    width: 268px;
+    -webkit-box-shadow: inset 3px 1px 3px #999;
+    color: #8A8A8A;
+    font-size: 19px;
+    border: solid #eeeeee 1px;
+    padding: 8px 15px;
+}*/
+
+#send_references .emphasizing-line {
+    width: 790px;
+    left: 125px;
+    top: 40px;
+}
+#send_references  h1{
+    margin-left: 140px;
+}
+
+#send_references .ref-cont {
+    width: 680px;
+    margin: 40px 5px 5px 195px;
+}
+
+#send_references .ref-cont li {
+    margin-top: 20px;
+    margin-bottom: 33px;
+    font-size: 14px;
+    color: #58595b;
+    list-style-type: decimal;
+    position: relative;
+}
+#send_references .ref-cont li::before {
+    width: 39px; 
+    height: 44px;
+    position: absolute;
+    left: -52px;
+    top: -7px;
+}
+
+#send_references .ref-cont li[data-pdf]::before {
+    content: url("../../content/img/references/ref_pdf.png");
+}
+#send_references .ref-cont li span {
+    font-size: 14px;
+}
+
+@media all and (orientation:portrait) {
+    #checkboxes_email {
+        top: 118px;
+        left: 100px;
+    }
+    #send_button{
+        top: 750px;
+        left: 579px;
+    }
+    #send_references .emphasizing-line {
+        width: 710px;
+        left: 38px;
+        top: 84px;
+    }
+}

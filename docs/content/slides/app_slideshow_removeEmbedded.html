@@ -1,0 +1,53 @@
+<article id="app_slideshow_removeEmbedded" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">app.slideshow.removeEmbedded</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Remove any embedded slideshows.</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Core Slideshow Method</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v2.2</td>
+			</tr>
+		</table>
+
+		<h3 class="headerWithLine">Syntax</h3>
+		<p><code>app.slideshow.removeEmbedded()</code></p>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>app.slideshow.removeEmbedded</code> will remove any embedded slideshows from a slide.</p>
+
+	<p><code>app.slideshow.removeEmbedded</code> is normally called from the slide's <code>onExit</code> method.</p>
+	
+	<h3 class="headerWithLine">Examples</h3>
+
+	<h4 class="smallHeaderWithLine">Example: <code>app.slideshow.removeEmbedded</code> to remove an embedded slideshow.</h4>
+	<p>The following example will remove the embedded a slidehow with id "MoA" from the slide with id "efficacy".</p>
+
+<pre>
+	<code>(function() {
+	  var slide = app.slide.efficacy = {
+	    elements: {
+	      moa: "#moaContainer"
+	    },
+	    onEnter: function(ele) {
+	      // Embed MoA slideshow with scroller
+	      app.slideshow.embed('MoA', slide.element.moa, true);
+	    },
+	    onExit: function(ele) {
+	    	// Remove embedded slideshows
+	    	app.slideshow.removeEmbedded();
+	    }
+	  }
+	})();</code>
+</pre>
+
+    <h3 class="headerWithLine">See Also</h3>
+    <p><span data-file="app_slideshow_removeEmbedded">app.slideshow.embed</span></p>
+  </div>
+</article>

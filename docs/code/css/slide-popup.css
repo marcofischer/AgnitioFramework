@@ -1,0 +1,5 @@
+.slide-popup.displaying {
+  min-height:1200px;
+/*  overflow:scroll;*/
+  top:0;
+}

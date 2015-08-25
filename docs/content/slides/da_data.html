@@ -1,0 +1,48 @@
+<article id="da_contentMap" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">DynamicAgenda.data</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Object in memory holding all information about the stored agendas.</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Module Property</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v1.0</td>
+			</tr>
+		</table>
+
+		<h3 class="headerWithLine">Syntax</h3>
+		<p><code>app.agenda.data</code></p>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>app.agenda.data</code> is a representation of the data in localStorage, and any agenda currently being worked on.</p>
+	<p>The following is an example of an object stored in <code>app.agenda.data</code>:</p>
+	<pre>
+<code>"DA_1351241161034" : {
+	name: "My agenda",
+	slides: ["intro", "efficacy", "studies", "survey"],
+	type: "slideshow"
+}</code></pre>
+
+		<h3 class="headerWithLine">Examples</h3>
+
+  	<h4 class="smallHeaderWithLine">Example: Getting the data for a specific agenda</h4>
+  	<p>The following example will get the data for an agenda with the name "Demo agenda".</p>
+  	<pre>
+<code>var id = app.agenda.contentMap['Demo agenda']; // returns the id of the agenda
+var data = app.agenda.data[id];
+</code></pre>
+
+  	<h4 class="smallHeaderWithLine">Example: Getting the data for the current agenda</h4>
+  	<p>The following example will get the data for an agenda currently being worked on (edited). This will be used when building interfaces</p>
+  	<pre>
+<code>var current = app.agenda.current; // returns the id of the current agenda
+var data = app.agenda.data[current];
+</code></pre>
+
+</article>

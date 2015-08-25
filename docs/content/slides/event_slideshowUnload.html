@@ -1,0 +1,26 @@
+<article id="event_slideshowLoad" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">Event: slideshowUnload</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Event called before a slideshow is unloaded</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Custom Event</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v1.0</td>
+			</tr>
+		</table>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>slideshowUnload</code> is dispatched every time a slideshow is unloaded. When the event is dispatched the namespace <code>app.slideshow</code> is still available and refers to the slideshow that is unloading.</p>
+	
+	<p><code>slideshowUnload</code> is automatically called when loading another slideshow, or collection.</p>
+
+	<p><code>event.target</code> will be the slideshow element. This means that you can use <code>event.target.id</code> to get the name of the unloading slideshow in the event handler.</p>
+	</div>
+</article>

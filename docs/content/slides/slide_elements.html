@@ -1,0 +1,49 @@
+<article id="slide_elements" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">Getting elements in slides</h2>
+    <p>The framework provides a convention for getting DOM elements in sides, which will then be automatically cleaned up when exiting the slide.</p>
+    
+    <p>To allow the browser garbage collector to effectively release memory it is important to remove references to elements. Using the convention described below will allow the framework to automatically clean up any references to DOM elements when exiting a slide.</p>
+    
+    <h3>Slide elements</h3>
+    <p>To make use of this feature an elements object is added to the JavaScript object for the slide. The object contains the name that should be used to reference the elemnts, and a query string used by the framework to find the element.</p>
+    <p>The element is then referenced through <code>this.element</code>.</p>
+    <p>The query string should be the same as used in a <code>querySelector</code> call.</p>
+    <p>If referencing a list of elements, the query string is replaced by an array with two items. The first item is the query string (same as discussed above), and the second is the string <em>all</em>. The framework will then use a <code>querySelectorAll</code> to get the elements.</p>
+    
+    <h3 class="headerWithLine">Examples</h3>
+
+  	<h4 class="smallHeaderWithLine">Example: Adding an elements object to a slide with query strings for several elements.</p>
+
+  <pre>
+<code>(function() {
+  var slide = app.slide.efficacy = {
+    elements: {
+      pictureArea: ".image-container",
+      allText: ["#text_li li", "all"],
+      indicators: [".indicator .dot", "all"],
+      rotation: "#image_rotation"
+    },
+    onEnter: function(ele) {
+      console.log('Elements available here');
+      // Add class to pictureArea element
+      util.addClass(slide.element.pictureArea, 'fadeIn');
+      // Adding event listener to the "rotation" element
+      app.addEvent('tap', slide.rotateImage, slide.rotation);
+    },
+    onExit: function(ele) {
+      console.log('No need to clean up elements here');
+    }
+  }
+})();</code>
+</pre>
+
+  <h3 class="headerWithLine">Changelog</h3>
+  <p>Version number refers to framework version.</p>
+  <dl>
+    <dt><code>2.1</code></dt>
+    <dd>Feature added to framework.</dd>
+  </dl>
+    
+    </div>
+</article>

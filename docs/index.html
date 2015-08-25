@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">  
+	<title>Agnitio Framework API</title>
+  <link rel="stylesheet" href="all.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+  <div id="presentation">
+    <nav id="mainmenu">
+      <a class="toc-link" onclick="app.slidePopup.hide(); return false;" href="#">Menu</a>
+    </nav>
+    <section id="slideshows" class="slideshows">    
+    </section>
+    <div id="slidePopup" class="slide-popup"></div>
+  </div>
+  <div id="debug"></div>
+
+  <!-- FRAMEWORK AND LIBRARIES -->  
+  <script src="../Blank/_framework/lib/agnitio.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../Blank/_framework/lib/touchy.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../Blank/_framework/lib/util.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../Blank/_framework/core.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../modules/slide-popup/slide-popup.js" type="text/javascript" charset="utf-8"></script>
+
+  <!-- INIT OF APP -->  
+  <script type="text/javascript" charset="utf-8">
+
+    // Create presentation and global namespace
+    var app = new Presentation({
+      pathToSlides: 'content/slides/',
+      slideshows: {
+        api: ['toc']
+      }
+    });
+    
+    // Modules
+    app.slidePopup = new SlidePopup('slidePopup');
+    
+    document.ontouchmove = function(e){
+     e.preventDefault();
+    }    
+  </script>
+
+  <!-- CUSTOM APP JAVASCRIPT -->  
+  <script src="code/js/toc.js" type="text/javascript" charset="utf-8"></script>
+
+  <!-- LOAD CONTENT -->
+  <script type="text/javascript" charset="utf-8">
+    app.load('api');
+  </script>  
+</body>
+</html>

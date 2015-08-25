@@ -1,0 +1,59 @@
+{
+  "storyboard": [
+    "devroche"
+  ],
+  "structures": {
+    "devroche": {
+      "type": "collection",
+      "content": [
+        "placeholder",
+        "introduction",
+        "alignment"
+      ],
+      "valid": true,
+      "name": "devroche"
+    },
+    "placeholder": {
+      "type": "slideshow",
+      "content": [
+        "placeholder"
+      ],
+      "valid": true,
+      "name": "placeholder"
+    },
+    "introduction": {
+      "type": "slideshow",
+      "content": [
+        "introduction"
+      ],
+      "valid": true,
+      "name": "introduction"
+    },
+    "alignment": {
+      "type": "slideshow",
+      "content": [
+        "alignment"
+      ],
+      "valid": true,
+      "name": "alignment"
+    }   
+  },
+  "slides": {
+    "introduction": {
+      "valid": true,
+      "name": "introduction",
+      "file": "introduction.html"
+    },
+    "placeholder": {
+      "valid": true,
+      "name": "placeholder",
+      "file": "placeholder.html"
+    },
+    "alignment": {
+      "valid": true,
+      "name": "alignment",
+      "file": "alignment.html"
+    }
+
+  }
+}

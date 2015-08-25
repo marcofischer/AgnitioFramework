@@ -1,0 +1,92 @@
+<article id="menu_introduction" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">Introduction to module: Menu</h2>
+    <p>The menu module will allow you to easily create a presentation, slideshow, or collection menu.</p>
+    <p>The Menu constructor will allow the creation of as many menus as the presentation requires.</p>
+    
+    <h3 class="headerWithLine">Requirements</h3>
+    <ul>
+      <li>draggy.js</li>
+      <li>touchy.js</li>
+      <li>util.js</li>
+    </ul>
+    
+    <h3 class="headerWithLine">Constructor Syntax</h3>
+		<p><code>app.menu = new Menu(<em>config</em>)</code></p>
+    
+    <h3 class="headerWithLine">Parameters</h3>
+		<dl>
+			<dt><code>config</code> object</dt>
+			<dd>Configuration of the menu.</dd>
+		</dl>
+		
+		<h3 class="headerWithLine">Configuration options</h3>
+		<dl>
+			<dt><code>attachTo</code> string (optional)</dt>
+			<dd>Name of a slideshow or collection to activate the menu when loaded. Leave off if global menu.</dd>
+			<dt><code>container</code> string (optional)</dt>
+			<dd>Id of the DOM element to which the menu markup should be added. Defaults to <strong>'mainmenu'</strong>.</dd>
+			<dt><code>offset</code> integer (optional)</dt>
+			<dd>Number of pixels to offset the menu in default state. Used, for example, to hide menu items left of the home link.</dd>
+			<dt><code>links</code> array</dt>
+			<dd>Array with data about menu items. Each item has at least a <strong>title</strong> and a <strong>goTo</strong> property.</dd>
+		</dl>
+		
+		<h3 class="headerWithLine">Examples</h3>
+
+  	<h4 class="smallHeaderWithLine">Example: Calling <code>new Menu</code> constructor for presentation menu</h4>
+  	<p>The following example will create a presentation menu (global) with no offset.</p>
+
+  	<pre>
+<code>app.menu = new Menu({
+  links: [
+    { title:"Home", goTo:"intro", className:"home" },
+    { title:"Efficacy", goTo:"efficacy" },
+    { title:"Patient Profiling", goTo:"patient_profiling" },
+    { title:"References", goTo:"refs" }
+  ]});
+</code></pre>
+
+<h4 class="smallHeaderWithLine">Example: Calling <code>new Menu</code> constructor for slideshow menu</h4>
+<p>The following example will create a slideshow menu for the 'efficacy' slideshow.</p>
+<p>NOTE: the <em>goTo</em> property takes dot-separated path to the content, i.e. <em>efficacy.studies</em> will navigate to the <em>studies</em> slide in the <em>efficacy</em> slideshow.</p>
+
+<pre>
+<code>app.efficacyMenu = new Menu({
+  attachTo: "efficacy",
+  links: [
+    { title:"Intro", goTo:"efficacy.intro" },
+    { title:"First line", goTo:"efficacy.firstline" },
+    { title:"Studies", goTo:"efficacy.studies" },
+    { title:"Results", goTo:"efficacy.results" }
+  ]
+});
+</code></pre>
+
+<h4 class="smallHeaderWithLine">Example: Calling <code>new Menu</code> constructor for collection menu</h4>
+<p>The following example will create a collection menu for the 'placebo' collection, with an offset of -162 pixels (to hide the reference menu item by default).</p>
+<p>NOTE: the <em>goTo</em> property takes dot-separated path to the content, i.e. <em>placebo.efficacy.studies</em> will navigate to the <em>studies</em> slide in the <em>efficacy</em> section of the <em>placebo</em> collection.</p>
+
+<pre>
+<code>app.placeboMenu = new Menu({
+  attachTo: 'placebo',
+  offset: -162,
+  links: [
+    { title:"References", goTo:"placebo.references" },
+    { title:"Intro", goTo:"placebo.intro", className:"home" },
+    { title:"Efficacy", goTo:"placebo.efficacy" },
+    { title:"MoA", goTo:"placebo.moa },
+    { title:"References", goTo:"placebo.refs" }
+  ]
+});
+</code></pre>
+
+<h3 class="headerWithLine">Changelog</h3>
+<p>Version number refers to module version.</p>
+<dl>
+	<dt><code>1.1</code></dt>
+	<dd>Parameters were replaced with a single configuration object. Scrolling and tracking of menu was added, as well as offset.</dd>
+</dl>
+    
+  </div>
+</article>

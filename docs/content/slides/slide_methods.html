@@ -1,0 +1,111 @@
+<article id="slide_methods" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">Running JavaScript when entering or exiting a slide</h2>
+    <p>The framework provides two means of running JavaScript when entering and exiting slides. For general use, i.e. when any slide is entered and exited, the custom events <code>slideEnter</code> and <code>slideExit</code> are recommended. For running JavaScript specific to a slide, the specific slide methods <code>onEnter()</code> and <code>onExit()</code> should be used.</p>
+    
+    <p>The <code><a href="?event_slideEnter">slideEnter</a></code> and <code><a href="?event_slideExit">slideExit</a></code> events are documented in the <strong>Custom Events</strong> section. Below are more information and examples on how to use the slide methods.</p>
+    
+    <h3>Slide objects</h3>
+    <p>Each slide has a corresponding JavaScript object. By default this object contains two empty functions: <code>onEnter()</code> and <code>onExit()</code>. The object, which has the same name as the slide id, is stored in the <code>app.slide</code> object.</p>
+    
+    <h3 class="headerWithLine">Examples</h3>
+
+  	<h4 class="smallHeaderWithLine">Example: Adding functionality to slide methods in the <code>app.slide</code> object</h4>
+  	<p>The following example will create a slide object with slide methods for a slide with id 'efficacy'. Notice the function wrapper and assignment of slide object to the variable <strong>slide</strong>. The <strong>slide</strong> variable will be available throughout the object, which is particularly helpful for event handlers.</p>
+
+  <pre>
+<code>(function() {
+  var efficacy = app.slide.efficacy = {
+    onEnter: function(ele) {
+      console.log('Entered slide "efficacy"');
+    },
+    onExit: function(ele) {
+      console.log('Exited slide "efficacy"');
+    }
+  }
+})();</code>
+</pre>
+  
+  <h4 class="smallHeaderWithLine">Example: Defining custom slide methods to the <code>app.slide</code> object</h4>
+	<p>The following example will create a slide object with custom methods for a slide with id 'efficacy'.</p>
+
+<pre>
+<code>(function() {
+  var efficacy = app.slide.efficacy = {
+    onEnter: function(ele) {
+      this.multiply(5,6);
+      this.divide(8,3);
+    },
+    onExit: function(ele) {
+      console.log('Exited slide "efficacy"');
+    },
+    multiply: function(x,y) {
+      console.log(x*y);
+    },
+    divide: function(x,y) {
+      console.log(x/y);
+    }
+  }
+})();</code>
+</pre>
+
+<h4 class="smallHeaderWithLine">Example: Finding an element within the slide and adding an event listener</h4>
+<p>The following example will first find an element within a slide and then add an event listener to it. Notice how the <strong>efficacy</strong> variable is used throughout to refer to the slide object. Slide specific event handlers should always be added using <code>app.addEvent(eventType, callback, attachTo)</code>. Elements and event listeners will be cleaned up by the framework when exiting the slide.</p>
+
+<pre>
+<code>(function() {
+  var efficacy = app.slide.efficacy = {
+    elements: {
+      btn: '#sample-button'
+    },
+    onEnter: function(ele) {
+      app.addEvent('click', efficacy.btnClick, efficacy.element.btn);
+    },
+    onExit: function(ele) {
+    },
+    logClick: function() {
+      console.log('Sample button clicked');
+    },
+    btnClick: function(event) {
+      efficacy.logClick();
+    }
+  }
+})();</code>
+</pre>
+
+<h4 class="smallHeaderWithLine">Example: Alternative syntax</h4>
+<p>The following example will demonstrate another syntax for defining the slide methods.</p>
+
+<pre>
+<code>(function() {
+  var efficacy = app.slide.efficacy;
+  efficacy.elements = {
+      btn: '#sample-button'
+  };
+  efficacy.onEnter = function(ele) {
+    app.addEvent('click', efficacy.btnClick, efficacy.element.btn);
+  },
+  efficacy.onExit = function(ele) {
+  };
+  efficacy.logClick = function() {
+    console.log('Sample button clicked');
+  };
+  efficacy.btnClick = function(event) {
+    efficacy.logClick();
+  };
+})();</code>
+</pre>
+
+<h3 class="headerWithLine">See Also</h3>
+<p><a href="?slide_elements">Getting elements in slides</a></p>
+<p><a href="?app_add_event">app.addEvent()</a></p>
+
+<h3 class="headerWithLine">Changelog</h3>
+<p>Version number refers to framework version.</p>
+<dl>
+  <dt><code>2.1.1</code></dt>
+  <dd>Updated examples to use new elements and add events features.</dd>
+</dl>
+    
+    </div>
+</article>

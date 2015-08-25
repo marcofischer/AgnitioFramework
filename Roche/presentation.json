@@ -1,0 +1,106 @@
+{
+  "storyboard": [
+    "placebo"
+  ],
+  "structures": {
+    "mechanism": {
+      "type": "slideshow",
+      "content": [
+        
+      ],
+      "valid": true,
+      "name": "Mechanism"
+    },
+   
+    "introduction": {
+      "type": "slideshow",
+      "content": [
+        "intro"
+      ],
+      "valid": true,
+      "name": "Introduction"
+    },
+    "linear": {
+      "type": "slideshow",
+      "content": [
+        "intro"
+      ],
+      "valid": true,
+      "name": "Linear slideshow"
+    },
+
+    "slide_1": {
+      "type": "slideshow",
+      "content": [
+        
+      ],
+      "valid": true,
+      "name": "About"
+    },
+   
+    "placebo": {
+      "type": "collection",
+      "content": [
+        "references",
+        "introduction",
+        "slide_1"
+      ],
+      "valid": true,
+      "name": "Placebo"
+    },
+    "dosing": {
+      "type": "slideshow",
+      "content": [
+        
+      ],
+      "valid": true,
+      "name": "Dosing"
+    },
+    "molecule": {
+      "type": "slideshow",
+      "content": [
+        
+      ],
+      "valid": true,
+      "name": "Molecule"
+    },
+    "references": {
+      "type": "slideshow",
+      "content": [
+        "send_references"
+      ],
+      "valid": true,
+      "name": "References"
+    },
+    "pain_is_complex": {
+      "type": "slideshow",
+      "content": [
+        
+      ],
+      "valid": true,
+      "name": "Pain is complex"
+    }
+  },
+  "slides": {
+    "intro": {
+      "valid": true,
+      "name": "Placebo frontpage",
+      "file": "intro.html"
+    },
+    "send_references": {
+      "valid": true,
+      "name": "Placebo references",
+      "file": "send_references.html"
+    },
+    "slide_1": {
+      "valid": true,
+      "name": "About",
+      "file": "slide_1.html"
+    },
+    "builder": {
+      "valid": false,
+      "name": "builder slide",
+      "file": "builder.html"
+    }
+  }
+}

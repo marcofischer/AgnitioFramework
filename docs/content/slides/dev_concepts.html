@@ -1,0 +1,20 @@
+<article id="dev_concepts" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">Development concepts and patterns</h2>
+    
+    <h3>Modularity</h3>
+    <p>A key concept of the framework is that every separate part of functionality should be possible to take out or replace, and the rest of the presentation should still work. This is partly achieved by creating modules utilizing the framework API and custom events, and partly it is the responsibility of the developer to not hard code references to objects not within the module.</p> 
+    <p>The framework itself is built with a few core modules containing the functionality that allow several different types of presentations to be created. They are also responsible for dispatching important events in the presentation life-cycle. The API and the custom events are then used to create modules with specific functionality, i.e. menus and references, as necessary for the presentation being developed.</p>
+    <p>Slides should be treated as modules in the sense that they should be able to be moved, removed, and loaded at any time without breaking functionality for the rest of the presentation. The framework offers a specific slide object that will make this easy.</p>
+    
+    <h3>Custom Events</h3>
+    <p>The custom events dispatched by the framework will make it easy to run code at specific moments, i.e. when a slideshow is loaded.</p> 
+    
+    <h3>Namespaces and closures</h3>
+    <p>Global namespaces should be avoided as much as possible. The framework declare the global <code>app</code> namespace from which all core functionality is accessed. Apart from <code>app</code>, the only global namespaces in the framework are the module constructors, i.e. Slideshow and BasicThumbs. It is recommended that a function wrapper is used in each JavaScript file to create a closure.</p>
+    
+    <h3>Names and IDs</h3>
+    <p>The names given to slideshows, collections and slides are also used as IDs for the corresponding HTML elements.</p>
+    
+  </div>
+</article>

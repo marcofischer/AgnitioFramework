@@ -1,0 +1,30 @@
+<article id="touchy" class="slide">
+  <div class="content">
+		<h2 class="slideHeader">Touchy</h2>
+		<p>Touchy is a JavaScript micro-library that will make it easy to have presentations work on both desktop and iOS devices.</p>
+		
+		<h3>Custom events</h3>
+		<p>The Touchy library will dispatch custom events when user interactions take place. By listening to these events it is possible to run code when those interactions take place (on desktop and iPad).
+		  <dl>
+		    <dt>tap</dt>
+		    <dd>Dispatched on <code>mouseup</code> or <code>touchend</code>. Used instead of <code>click</code>.</dd>
+		    <dt>doubleTap</dt>
+		    <dd>Dispatched when two <code>tap</code> events take place within 500ms of each other. Used instead of <code>doubleClick</code>.</dd>
+		    <dt>longTouch</dt>
+		    <dd>Dispatched when holding the finger or mouse (left button) down, without moving, for more than 500ms.</dd>
+		    <dt>swipeLeft</dt>
+		    <dd>Dispatched when moving finger or mouse (left button down) left over the content for less than 500ms.</dd>
+		    <dt>swipeRight</dt>
+		    <dd>Dispatched when moving finger or mouse (left button down) right over the content for less than 500ms.</dd>
+		    <dt>swipeUp</dt>
+		    <dd>Dispatched when moving finger or mouse (left button down) up over the content for less than 500ms.</dd>
+		    <dt>swipeDown</dt>
+		    <dd>Dispatched when moving finger or mouse (left button down) down over the content for less than 500ms.</dd>
+		    <dt>drag</dt>
+		    <dd>Dispatched when moving finger or mouse (left button down) over the screen for more than 500ms.</dd>
+		    <dt>twoFingerTap</dt>
+		    <dd>Touch event only! Dispatched on <code>touchend</code> when two fingers are touching screen.</dd>
+		  </dl>
+		
+  </div>
+</article>

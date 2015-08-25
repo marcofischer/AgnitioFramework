@@ -1,0 +1,61 @@
+<article id="data_introduction" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">Introduction to module: Data</h2>
+		
+		<h1>DEPRECATED MODULE! Use analytics module instead</h1>
+		
+    <p>The data module will allow you to easily monitor slides in a presentation.</p>
+    
+    <p>Currently the data module is very basic and simply does one thing: monitor slides in a presentation (send slide data to Agnitio Analyzer). The module will get slide names/strings from one of three ways (in order):</p>
+    <ol>
+      <li><code>monitormap</code>, a global JavaScript object</li>
+      <li><code>data-monitor</code> attribute on slide elements</li>
+      <li>slide id (fallback)</li>
+    </ol>
+    
+    <h3 class="headerWithLine">Convention</h3>
+		<p>At Agnitio we use a JavaScript object to map slideshow and slide ids with descriptive strings that should be logged in the Analyzer each time a slide is entered. This makes it easy to have an overview of the data that is submitted and to update it.</p>
+		<p>See below for an example of a monitormap object.</p>
+		
+		<h3 class="headerWithLine">Limitations</h3>
+		<p>Current version does not allow to specify slides that should be excluded from monitoring. This will be added in future version.</p>
+    
+    <h3 class="headerWithLine">Constructor Syntax</h3>
+		<p><code>app.data = new Data(monitoringEnabled);</code></p>
+
+    <h4 class="headerWithLine">Parameters</h4>
+		<dl>
+			<dt><code>monitoringEnabled</code> boolean (optional)</dt>
+			<dd>If the framework should submit data to the Analyzer or not. Possible values are <code>true</code> or <code>false</code>. Defaults to <code>true</code>.</dd>
+		</dl>
+		
+		<h3 class="headerWithLine">Examples</h3>
+
+  	<h4 class="smallHeaderWithLine">Example: a global monitormap object</h4>
+  	<p>The following is an example of a monitormap object used by the data module to get the data strings it should submit to the Analyzer.</p>
+
+  	<pre>
+<code>window.monitormap = {
+  presentation: "Placebo v2",
+  slideshows: {
+    intro: "Placebo introduction",
+    efficacy: "Efficacy",
+    moa: "Mode of Action"
+  },
+  slides: {
+    IN_info: "General information",
+    EF_firstline: "Efficacy First-line",
+    MO_video: "Mode of Action video"
+  }
+};
+</code></pre>
+
+    <h4 class="smallHeaderWithLine">Example: data-monitor attribute on slides</h4>
+    <p>The following is an example of a data-monitor attribute on the opening article-tag of a slide (set on each slide).</p>
+
+    <pre>
+<code>&lt;article id="efficacy" class="slide" data-monitor="10001 - Efficacy"&gt;
+</code></pre>
+		
+  </div>
+</article>

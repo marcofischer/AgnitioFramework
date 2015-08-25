@@ -1,0 +1,44 @@
+<article id="draggy" class="slide">
+  <div class="content">
+		<h2 class="slideHeader">Draggy</h2>
+		<p>Draggy is a JavaScript microlibrary for moving elements in Webkit browsers, works both on desktop and iOS devices.</p>
+		
+		<h3 class="headerWithLine">Constructor Syntax</h3>
+		<p><code>app.dragObj = new Draggy(attachTo, config);</code></p>
+		
+		<h4 class="headerWithLine">Parameters</h4>
+		<dl>
+			<dt><code>attachTo</code> DOM element or id</dt>
+			<dd>The element, or the id of the element, receiving the drag behavior.</dd>
+			<dt><code>config</code> object (optional)</dt>
+			<dd>Configuration options for the draggy object.</dd>
+		</dl>
+		
+		<h4 class="headerWithLine">Config</h4>
+		<dl>
+			<dt><code>onChange</code> function</dt>
+			<dd>A function called when object is dragged. Takes x and y coordinates as parameters.</dd>
+			<dt><code>limitsX</code> array (defaults to [-9999, 9999])</dt>
+			<dd>Range of possible x-values. The draggy object cannot be moved outside of these.</dd>
+			<dt><code>limitsY</code> array  (defaults to [-9999, 9999])</dt>
+			<dd>Range of possible y-values. The draggy object cannot be moved outside of these.</dd>
+			<dt><code>restrictX</code> boolean (defaults to false)</dt>
+			<dd>If set to true the draggy object cannot be moved in horizontal direction.</dd>
+			<dt><code>restrictY</code> boolean (defaults to false)</dt>
+			<dd>If set to true the draggy object cannot be moved in vertical direction.</dd>
+		</dl>
+		
+		<h3>Custom events</h3>
+		<p>The Draggy library will dispatch custom events when element is dragged or dropped.</p>
+		  <dl>
+		    <dt>onDrag</dt>
+		    <dd>Dispatched on <code>mousemove</code> or <code>touchmove</code>. <code>event.target</code> will be the draggy element.</dd>
+		    <dt>onDrop</dt>
+		    <dd>Dispatched on <code>mouseup</code> or <code>touchend</code>. <code>event.target</code> will be the draggy element.</dd>
+		  </dl>
+
+		  <h3>External documentation</h3>
+		  <p>For more documentation and examples please go to:</p>
+		  <p><a href="http://jofan.github.com/Draggy/">Draggy documentation on GitHub</a></p>
+  </div>
+</article>

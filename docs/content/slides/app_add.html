@@ -1,0 +1,51 @@
+<article id="app_add" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">app.add</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Dynamically generate new slideshow or collection in presentation.</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Core Presentation Method</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v1.0</td>
+			</tr>
+		</table>
+
+		<h3 class="headerWithLine">Syntax</h3>
+		<p><code>app.add(<em>name</em>, <em>content</em>, <em>type</em>)</code></p>
+
+		<h3 class="headerWithLine">Parameters</h3>
+		<dl>
+			<dt><code>name</code> string</dt>
+			<dd>Name of slideshow or collection.</dd>
+			<dt><code>content</code> array</dt>
+			<dd>Array of slides or slideshows (slideshow, collection respectively)</dd>
+			<dt><code>type</code> string</dt>
+			<dd>Type of content, possible values 'slideshow' [default], 'collection'</dd>
+		</dl>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>app.add</code> will create a new slideshow or collection based on existing slides or slideshows.</p>
+
+	<p>Calling <code>app.add</code> will not load any content, for that <a href="content/slides/app_load.html">app.load</a> should be used.</p>
+	
+	<p><code>app.add</code> is often used to create dynamic agendas, or to create dynamic slideshows based on user interactions.</p>
+
+	<h3 class="headerWithLine">Examples</h3>
+
+	<h4 class="smallHeaderWithLine">Example: <code>app.add</code> to create a slideshow with name 'demo'</h4>
+	<p>The following example will create the slideshow 'demo', making it available for loading</p>
+
+	<pre><code>app.add('demo', ['first_slide', 'second_slide']);</code></pre>
+	
+	<h4 class="smallHeaderWithLine">Example: <code>app.add</code> to create a collection with name 'demo'</h4>
+	<p>The following example will create the collection 'demo', making it available for loading</p>
+
+	<pre><code>app.add('demo', ['section_one', 'section_two'], 'collection');</code></pre>
+
+</article>

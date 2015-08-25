@@ -1,0 +1,27 @@
+@import url("_framework/styles/reset.css");
+@import url("_framework/styles/slideshow.css");
+@import url("_framework/styles/core.css");
+
+@import url("code/css/slideshow.css");
+@import url("code/css/intro.css");
+@import url("code/css/blue_urine.css");
+@import url("code/css/burping_effect.css");
+
+
+#inline, #inline2 {
+	height:768px;
+	width:1024px;
+	position: absolute;
+	top:-140px;
+	left:-250px;
+	overflow: hidden;
+	-webkit-transform:scale(0.5, 0.5);
+}
+#inline2 {
+	position: absolute;
+	left:270px;
+}
+
+@media all and (-ms-high-contrast: none) {
+	.menu li { float: left; }
+}

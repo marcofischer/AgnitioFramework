@@ -1,0 +1,17 @@
+@media all and (orientation:portrait) {
+
+}
+
+@media all and (orientation:landscape) {
+
+    #intro .basic {
+background-color: #000;
+    }
+
+    h1 {
+    color: #FFF;    
+    font-family: AntiPasto, Arial, sans-serif;
+    }
+
+
+}

@@ -1,0 +1,67 @@
+<article id="analytics_introduction" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">Introduction to module: Analytics</h2>
+		
+    <p>The analytics module will allow you to easily monitor slides in a presentation.</p>
+    
+    <p>The objective of the analytics module is very simple: monitor slides in a presentation (send slide data to Agnitio Analyzer).</p>
+    
+    <h3 class="headerWithLine">Initialize module</h3>
+    <p>In setup.js:</p>
+		<p><code>app.analytics.init(config);</code></p>
+
+    <h4 class="headerWithLine">Parameters</h4>
+		<dl>
+			<dt><code>config</code> object (optional)</dt>
+			<dd>See below for configuration options.</dd>
+		</dl>
+		
+		<h4 class="headerWithLine">Configuration options</h4>
+		<dl>
+			<dt><code>excludeContent</code> array (optional)</dt>
+			<dd>Collections and slideshows that should be excluded from monitoring.</dd>
+			<dt><code>excludeSlides</code> array (optional)</dt>
+			<dd>Slides that should be excluded from monitoring.</dd>
+			<dt><code>map</code> object (optional)</dt>
+			<dd>A JavaScript object mapping structure ids to ids specified by client.</dd>
+			<dt><code>offsetChapters</code> integer (optional)</dt>
+			<dd>Used, in example, to not use the root structure as a chapter.</dd>
+			<dt><code>version</code> string (optional)</dt>
+			<dd>The version of the presentation being monitored.</dd>
+		</dl>
+		
+		<h3 class="headerWithLine">Examples</h3>
+
+  	<h4 class="smallHeaderWithLine">Example: a global monitormap object</h4>
+  	<p>The following is an example of a monitormap object used by the analytics module to get the data strings it should submit to the Analyzer. In the map each key is the ID used in the code to reference the content (i.e. the ID used in presentation.json).</p>
+
+  	<pre>
+<code>window.monitormap = {
+  efficacy: {
+    id: "chapter-002",
+    name: "Efficacy"
+  },
+  placebo: {
+    id: "chapter-001",
+    name: "Placebo v2"
+  }
+  high_altitude: {
+    id: "slide-014",
+    name: "Efficacy at high altitude"
+  }
+};
+</code></pre>
+
+    <h4 class="smallHeaderWithLine">Example: setup with configuration</h4>
+    <p>The following is an example of how to initialize the module with some cofiguration in the setup.js file. In this example the ids and names that should be monitored has been mapped in the <strong>app.monitormap</strong> object. The offsetChapters option tell the module to ignore the first structure level for monitoring.</p>
+
+    <pre>
+<code>app.analytics.init({
+  version: '1.3.1',
+  map: app.monitormap,
+  offsetChapters: 1
+});
+</code></pre>
+		
+  </div>
+</article>

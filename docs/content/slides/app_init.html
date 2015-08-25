@@ -1,0 +1,59 @@
+<article id="app_init" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">app.init</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Loads initial content.</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Core Presentation Method</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v2.0</td>
+			</tr>
+		</table>
+
+		<h3 class="headerWithLine">Syntax</h3>
+		<p><code>app.init(<em>structure</em>, <em>content</em>, <em>subcontent</em>)</code></p>
+
+		<h3 class="headerWithLine">Parameters</h3>
+		<dl>
+			<dt><code>structure</code> string</dt>
+			<dd>Name of slideshow or collection to load.</dd>
+			<dt><code>content</code> string (optional)</dt>
+			<dd>Slide or section to initially be displayed.</dd>
+			<dt><code>subcontent</code> string (optional)</dt>
+			<dd>Slide in collection to initially be displayed.</dd>
+		</dl>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>app.init</code> will load either the content specified by the parameters or via the search string in the URL (takes presedence).</p>
+
+	<p><code>app.init</code> is by default called from the bottom of the setup.js file.</p>
+	
+	<h3 class="headerWithLine">Loading content via URL search string</h3>
+	<p>It is possible to tell the presentation what content to load by adding a search string to the URL. The functionality is built into the <code>app.init</code> method. There are two patterns of search string that can be used:</p>
+	<ul>
+	  <li>?path=structure.content.subcontent</li>
+	  <li>?slide=slideName</li>
+	</ul>
+	<p>This could for example be used when developing to easily set what slide should be displayed when reloading browser.</p>
+
+	<h3 class="headerWithLine">Examples</h3>
+
+	<h4 class="smallHeaderWithLine">Example: <code>app.init</code> of a collection with name 'placebo'</h4>
+	<p>The following example will load the collection 'placebo' if it exist, and scroll to the 'efficacy' section.</p>
+
+	<pre><code>app.init('placebo', 'efficacy');</code></pre>
+	
+	<h3 class="headerWithLine">Changelog</h3>
+	<p>Version number refers to framework version.</p>
+	<dl>
+		<dt><code></code></dt>
+		<dd></dd>
+	</dl>
+
+</article>

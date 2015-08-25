@@ -1,0 +1,26 @@
+<article id="event_collectionLoad" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">Event: collectionUnload</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Event called before a collection is unloaded</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Custom Event</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v1.0</td>
+			</tr>
+		</table>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>collectionUnload</code> is dispatched every time a collection is unloaded. When the event is dispatched the namespace <code>app.collection</code> is still available and refers to the collection that is unloading.</p>
+	
+	<p><code>collectionUnload</code> is automatically called when loading another collection, or collection.</p>
+
+	<p><code>event.target</code> will be the collection element. This means that you can use <code>event.target.id</code> to get the name of the unloading collection in the event handler.</p>
+	</div>
+</article>

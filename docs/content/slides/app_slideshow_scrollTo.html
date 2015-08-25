@@ -1,0 +1,52 @@
+<article id="app_slideshow_scrollTo" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">app.slideshow.scrollTo</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Navigate to a slide in the active slideshow.</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Core Slideshow Method</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v1.0</td>
+			</tr>
+		</table>
+
+		<h3 class="headerWithLine">Syntax</h3>
+		<p><code>app.slideshow.scrollTo(slide)</code></p>
+
+		<h3 class="headerWithLine">Parameters</h3>
+		<dl>
+			<dt><code>slide</code> string/number</dt>
+			<dd>Id or number (order) of the slide.</dd>
+		</dl>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>app.slideshow.scrollTo</code> will move to the slide supplied as parameter, if it is available. It will only navigate within a slideshow, for navigating to slides in other slideshows use <code>app.goTo</code>.</p>
+
+	<p><code>app.slideshow.scrollTo</code> accepts either the slide id, or the slide order number (in the active slideshow) as parameter.</p>
+	
+	<h3 class="headerWithLine">Examples</h3>
+
+	<h4 class="smallHeaderWithLine">Example: <code>app.slideshow.scrollTo</code> to navigate to a slide using its id.</h4>
+	<p>The following example will move to the slide with the id 'third_slide' if it is available in the active slideshow.</p>
+
+<pre>
+<code>app.slideshow.scrollTo('third_slide');</code>
+</pre>
+
+<h4 class="smallHeaderWithLine">Example: <code>app.slideshow.scrollTo</code> to navigate to a slide using its order number.</h4>
+<p>The following example will move to the fourth slide in the active slideshow (ordering is 0-based).</p>
+
+<pre>
+<code>app.slideshow.scrollTo(5);</code>
+</pre>
+
+    <h3 class="headerWithLine">See Also</h3>
+    <p><span data-file="app_goTo">app.goTo</span></p>
+  </div>
+</article>

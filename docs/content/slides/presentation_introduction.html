@@ -1,0 +1,26 @@
+<article id="presentation_introduction" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">Introduction to core module: Presentation</h2>
+    <p>This JavaScript constructor initializes the presentation using the supplied configuration to create slideshows and collections. In the process it will ensure access to the global namespace <code>app</code>, and end by dispatching the <code>presentationInit</code> event.</p>
+
+    <h3>Custom events</h3>
+    <p>The Presentation module dispatches the following events</p>
+    <ul>
+      <li><code>presentationInit</code></li>
+    </ul>
+    
+    <h3>Presentation setup</h3>
+    <p>The framework provides a <em>setup.js</em> file in the root of the app (since version 2.0). This file is used to configure and setup the presentation and modules.</p>
+
+    <h3>Initializing the presentation</h3>
+    <p>In order to run the presentation <code>app.init()</code> need to be run. This is normally done by including it last in the <em>setup.js</em> file.</p>
+    
+    <h3 class="headerWithLine">Changelog</h3>
+  	<p>Version number refers to framework version.</p>
+  	<dl>
+  		<dt><code>2.0</code></dt>
+  		<dd>The following configuration options were added: <code>globalElements</code>, <code>pathToSlides</code></dd>
+  	</dl>
+    
+  </div>
+</article>

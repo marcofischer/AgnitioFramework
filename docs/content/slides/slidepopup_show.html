@@ -1,0 +1,43 @@
+<article id="slidepopup_show" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">SlidePopup.show</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Add and show content of a slide popup.</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Module instance method</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v1.0</td>
+			</tr>
+		</table>
+
+		<h3 class="headerWithLine">Syntax</h3>
+		<p><code>app.slidePopup.show(slide)</code></p>
+		
+		<h3 class="headerWithLine">Parameters</h3>
+		<dl>
+			<dt><code>slide</code> string</dt>
+			<dd>Name of the slide to be displayed in popup.</dd>
+		</dl>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>SlidePopup.show</code> will fetch slide content and display the popup container.</p>
+	
+	<p>The slide's <code>onEnter</code> method will be called when calling the <code>show</code> method.</p>
+	
+	<h3 class="headerWithLine">Examples</h3>
+
+	<h4 class="smallHeaderWithLine">Example: <code>app.slidePopup</code> to show a SlidePopup instance.</h4>
+	<p>The following example will get the content of the slide 'efficacy' and display a SlidePopup instance referenced through <code>app.slidePopup</code>.</p>
+
+<pre>
+<code>app.slidePopup.show('efficacy');</code>
+</pre>
+
+  </div>
+</article>

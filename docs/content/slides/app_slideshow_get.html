@@ -1,0 +1,36 @@
+<article id="app_slideshow_get" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">app.slideshow.get</h2>
+
+		<h3 class="headerWithLine">Summary</h3>
+		<p>Get the HTML element of a slide.</p>
+
+		<table> 
+			<tr>
+				<td colspan="2" class="header">Core Slideshow Method</td> 
+			</tr> 
+			<tr> 
+				<td>Implemented in</td>
+				<td>v1.0</td>
+			</tr>
+		</table>
+
+		<h3 class="headerWithLine">Syntax</h3>
+		<p><code>app.slideshow.get(slideId)</code></p>
+
+		<h3 class="headerWithLine">Parameters</h3>
+		<dl>
+			<dt><code>slideId</code> string</dt>
+			<dd>The id of the slide. OPTIONAL</dd>
+		</dl>
+
+	<h3 class="headerWithLine">Description</h3>
+
+	<p><code>app.slideshow.get</code> will return the HTML element of a slide. If a parameter is given it will try to get the element corresponding to the id, and if no parameter is given then it will get the element of the current slide.</p>
+
+	<p><code>app.slideshow.get</code> is a simple wrapper for document.getElementById(slideId).</p>
+
+<h3 class="headerWithLine">See Also</h3>
+<p><a href="content/slides/app_slideshow_getIndex.html">app.slideshow.getIndex</a></p>
+
+</article>

@@ -1,0 +1,75 @@
+<article id="da_interface" class="slide">
+	<div class="content">
+		<h2 class="slideHeader">How to use the bundled interface</h2>
+		
+    <p>The dynamic agenda module comes bundled with an example interface that can be easily plugged into any presentation using the framework. However, the interface is kept simple by design as most presentations/products will want to use their own custom interface for creating dynamic agendas.</p>
+    
+    <p>.</p>
+    
+    <h3 class="headerWithLine">Limitations</h3>
+    <p>The interface does not currently have functionality for moving slides around in an existing agenda.</p>
+
+    <h3 class="headerWithLine">Initializing the interface (and dynamic agenda module)</h3>
+    <p>Add the following script tags to the index.html file:</p>
+    <p><code>&lt;script src="modules/dynamic-agenda/dynamic-agenda.js"&gt;&lt;/script&gt;</code></p>
+    <p><code>&lt;script src="modules/dynamic-agenda/dynamic-agenda.interface.js"&gt;&lt;/script&gt;</code></p>
+    <p>Add the following CSS import to the all.css file:</p>
+    <p><code>@import url("modules/dynamic-agenda/dynamic-agenda.interface.css");</code></p>
+    <p>Copy the two html files in the <code>modules/dynamic-agenda/slides</code> folder to the <code>slides</code> folder.</p>
+
+    <p>In setup.js:</p>
+		<p><code>app.agenda.init(name, config);</code></p>
+    <p>(This replaces the general initialization instruction of dynamic agenda)</p>
+
+    <h4 class="headerWithLine">Parameters to app.agenda.init</h4>
+		<dl>
+			<dt><code>name</code> string</dt>
+			<dd>The name to be used in localStorage to store the agendas.</dd>
+      <dt><code>config</code> object (optional)</dt>
+      <dd>Interface configuration. See below for options.</dd>
+		</dl>
+		
+    <h4 class="headerWithLine">Configuration options</h4>
+    <dl>
+      <dt><code>pathToThumbs</code> string</dt>
+      <dd>Specify a path to the thumbnails of the slides. Defaults to <code>content/img/thumbs</code></dd>
+      <dt><code>slides</code> array</dt>
+      <dd>Specify what slides should be available in the dynamic agenda. Defaults to all slides in <code>presentation.json</code> file.</dd>
+    </dl>
+
+    <h4 class="headerWithLine">Accessing the interface</h4>
+    <p>Once the interface has been initialized it is possible to load it with <code>app.load('DA');</code>.</p>
+    <p>If the presentation is using the AutoMenu module, you can prepend or append a link to the menu by adding the following to the menu configuration:</p>
+    <p><pre>
+<code>prepend: [
+  {title: 'Builder', goTo: 'app.load("DA")'}
+]
+</code></pre>
+
+		<h3 class="headerWithLine">Examples</h3>
+
+  	<h4 class="smallHeaderWithLine">Example: Initializing the interface</h4>
+  	<p>The following example would create a dynamic agenda that stores created slideshow in <code>localStorage.DA_Placebo</code>. This call would normally be placed in setup.js but can also be placed in the code setting up the interface for the dynamic agenda.</p>
+
+  	<pre>
+<code>app.agenda.init('DA_Placebo');</code></pre>
+
+    <h4 class="smallHeaderWithLine">Example: Initializing the interface with limited slides</h4>
+    <p>The following example would create a dynamic agenda that will only use the slides provided in the configuration.</p>
+    <pre>
+<code>app.agenda.init('DA_Placebo', {
+  slides: [
+      'intro',
+      'risk_of_osteo',
+      'mode_of_action',
+      'types_of_pain',
+      'treatment_adherence',
+      'side_effects',
+      'studies',
+      'pain_therapy'
+    ]
+  });
+</code></pre>
+		
+  </div>
+</article>
