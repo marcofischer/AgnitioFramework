@@ -1,0 +1,19 @@
+#references_only {
+    background-color: #CCC;
+    position: relative;
+}
+
+#references_only {
+ /*   background: url('../../content/img/introduction/bg.png') top left no-repeat; */
+    background-color: #B3B3B3;
+    background-size: 1024px 714px;
+
+}
+
+#references_only #text {
+    width: 850px;
+    position: relative;
+    top: 77px;
+    left: 62px;
+ 
+}
