@@ -4,17 +4,14 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
  	prefix = require('gulp-autoprefixer'),
     uglifycss = require('gulp-uglifycss');
-
-
+//
 
 // Uglifies
 
-gulp.task('scripts', function() {
-
-	gulp.src('code/build/js/*.js') // get all js files
-	.pipe(uglify())
-	.pipe(gulp.dest('code/js')); // put it in the minjs folder (created automatically)
-
+gulp.task('compress', function() {
+  return gulp.src('code/build/js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('code/js'));
 });
 
 // Styles Task
@@ -32,7 +29,7 @@ gulp.task('css', function () {
 
 gulp.task('watch', function() {
 
-	gulp.watch('code/build/js/*.js', ['scripts']);
+	gulp.watch('code/build/js/*.js', ['compress']);
 	gulp.watch('code/build/css/*.css', ['css'])
 
 });
@@ -40,4 +37,4 @@ gulp.task('watch', function() {
 
 // Default Task
 
-gulp.task('default', ['scripts', 'css', 'watch']);
+gulp.task('default', ['compress', 'css', 'watch']);

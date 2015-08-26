@@ -56,9 +56,9 @@ position: relative;
 
 #mainfooter {
     position: absolute;
-    bottom: 0;
+    top: 712px;
     background-color: #FFF;
-    height: 32px;
+    height: 36px;
     padding-top: 20px;
 }
 

@@ -1,8 +1,16 @@
-
 document.addEventListener('presentationInit', function() {
 
-
 // Go Home
+
+
+  $('#menu ul ul li, #mainfooter li').on('tap', function () { // target the children ul ul only and not top level
+
+    // when clicking on menu, find the data-slideshow and data-content and take the user there
+
+    app.goTo('devroche', $(this).data('slideshow'), $(this).data('content'));
+
+  });
+
 
   $('#goHome').on('tap', function () {
     app.goTo('devroche', 'placeholder', 'placeholder_first');
@@ -25,46 +33,6 @@ document.addEventListener('presentationInit', function() {
   $('#menu li').next().next().on('tap', function() {
         $(this).next().slideDown();
   });
-
-// Go to pages
-
-  
-  $('#menu ul ul li').eq(0).on('tap', function() { // Unmet need
-  app.goTo('devroche', 'introduction', 'introduction_first');
-  });
-
-  $('#menu ul ul li').eq(1).on('tap', function() { // Outcomes
-  app.goTo('devroche', 'introduction', 'introduction_second');
-  });
-
-  $('#menu ul ul li').eq(2).on('tap', function() { // Alignment
-  app.goTo('devroche', 'introduction', 'alignment_first');
-  });
-
-  $('#menu ul ul li').eq(3).on('tap', function() { // Expertise in haem
-  app.goTo('devroche', 'introduction', 'expertsinhaem_first');
-  });
-
-
-  $('#menu .local li').eq(0).on('tap', function() { // Expertise in haem
-    console.log(this);
-  app.goTo('devroche', 'localimplementatonfirst', 'localimplementaton_first');
-  });
-
-  $('#menu .local li').eq(1).on('tap', function() { // Expertise in haem
-    console.log(this);
-      app.goTo('devroche', 'localimplementatonfirst', 'localimplementaton_second');
-  });  
-
-/* Footer links */
-
-  $('#mainfooter li').eq(0).on('tap', function() { // Expertise in haem
-  app.goTo('devroche', 'references', 'references_only');
-  });
-
-  $('#mainfooter li').eq(1).on('tap', function() { // Expertise in haem
-  app.goTo('devroche', 'resources', 'resources_home');
-  });   
 
 
 });
