@@ -13,7 +13,7 @@ document.addEventListener('presentationInit', function() {
 
 
   $('#goHome').on('tap', function () {
-    app.goTo('devroche', 'placeholder', 'placeholder_first');
+    app.goTo('devroche', 'start', 'start_first');
   });
 
 // Toggle Menu

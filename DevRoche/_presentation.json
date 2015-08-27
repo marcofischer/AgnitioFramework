@@ -8,52 +8,104 @@
       "content": [
         "placeholder",
         "introduction",
-        "alignment"
+        "localimplementatonfirst",
+        "references",
+        "resources"
       ],
       "valid": true,
       "name": "devroche"
     },
+       
     "placeholder": {
       "type": "slideshow",
       "content": [
-        "placeholder"
-      ],
+        "placeholder_first"
+        ],
       "valid": true,
-      "name": "placeholder"
+      "name": "placeholder first slide"
     },
     "introduction": {
       "type": "slideshow",
       "content": [
-        "introduction"
+        "introduction_first",
+        "introduction_second",
+        "alignment_first",
+        "expertsinhaem_first"
       ],
       "valid": true,
-      "name": "introduction"
+      "name": "introduction first slide"
     },
-    "alignment": {
+    "localimplementatonfirst": {
       "type": "slideshow",
       "content": [
-        "alignment"
+        "localimplementation_first",
+        "localimplementation_second"
       ],
       "valid": true,
-      "name": "alignment"
-    }   
+      "name": "localimp first"
+    },
+    "references": {
+      "type": "slideshow",
+      "content": [
+        "references_only"
+      ],
+      "valid": true,
+      "name": "references only"
+    },                 
+    "resources": {
+      "type": "slideshow",
+      "content": [
+        "resources_home"
+      ],
+      "valid": true,
+      "name": "references only"
+    }                 
   },
   "slides": {
-    "introduction": {
-      "valid": true,
-      "name": "introduction",
-      "file": "introduction.html"
-    },
-    "placeholder": {
+    "placeholder_first": {
       "valid": true,
       "name": "placeholder",
-      "file": "placeholder.html"
+      "file": "placeholder_first.html"
+    },   
+    "introduction_first": {
+      "valid": true,
+      "name": "introduction",
+      "file": "introduction_first.html"
     },
-    "alignment": {
+    "introduction_second": {
+      "valid": true,
+      "name": "introductionsecond",
+      "file": "introduction_second.html"
+    },
+    "alignment_first": {
       "valid": true,
       "name": "alignment",
-      "file": "alignment.html"
+      "file": "alignment_first.html"
+    },
+    "expertsinhaem_first": {
+      "valid": true,
+      "name": "expertsinhaem",
+      "file": "expertsinhaem_first.html"
+    },
+    "localimplementation_first": {
+      "valid": true,
+      "name": "localimplementaton",
+      "file": "localimplementation_first.html"
+    },
+    "localimplementation_second": {
+      "valid": true,
+      "name": "localimplementaton second",
+      "file": "localimplementation_second.html"
+    }, 
+    "references_only": {
+      "valid": true,
+      "name": "references only",
+      "file": "references_only.html"
+    },
+    "resources_home": {
+      "valid": true,
+      "name": "resources home",
+      "file": "resources_home.html"
     }
-
   }
 }

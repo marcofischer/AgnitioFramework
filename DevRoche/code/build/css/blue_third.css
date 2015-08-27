@@ -1,0 +1,49 @@
+#blue_third {
+    background-color: #CCC;
+    position: relative;
+}
+
+#blue_third {
+    background: url('../../content/img/blue_third/bg.png') top left no-repeat;
+    background-size: 1024px 714px;
+
+}
+
+#blue_third h1 {
+font-size: 55px;
+color: #FFF;
+position: relative;
+top: 89px;
+left: 74px;
+}
+
+#blue_third p {
+    position: relative;
+    font-size: 24px;
+    line-height: 25px;	
+}
+
+#blue_third p:nth-child(2) {
+    left: 500px;
+    width: 400px;
+    top: 140px;
+}
+
+#blue_third p:nth-child(3) {
+    left: 500px;
+    width: 400px;
+    top: 160px;
+}
+
+#blue_third p:nth-child(4) {
+    left: 500px;
+    width: 400px;
+    top: 182px;
+}
+
+#blue_third img#text {
+
+    position: relative;
+    top: 118px;
+    left: 74px;
+}

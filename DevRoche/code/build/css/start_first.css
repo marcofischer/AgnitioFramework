@@ -1,0 +1,15 @@
+#start_first {
+    background: url('../../content/img/start/bg.png') top left no-repeat;
+ 
+    background-size: 1024px 714px;
+    position: relative;
+}
+
+#start_first h1 {
+   font-size: 31px;
+   position: relative;
+   top: 380px;
+   width:400px;
+   left: 60px;
+   color: #FFF; 
+}

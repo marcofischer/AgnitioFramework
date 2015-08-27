@@ -1,0 +1,1 @@
+document.addEventListener("presentationInit",function(){app.slide.start_first={elements:{},onEnter:function(n){$("#menu").hide()},onExit:function(n){$("#menu .hasChildren").next().slideUp()}}});

@@ -1,0 +1,1 @@
+document.addEventListener("presentationInit",function(){app.slide.blue_third={elements:{},onEnter:function(n){$("#menu").hide()},onExit:function(n){$("#menu .hasChildren").next().slideUp()}}});

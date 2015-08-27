@@ -1,4 +1,4 @@
-{
+ {
   "storyboard": [
     "devroche"
   ],
@@ -6,9 +6,9 @@
     "devroche": {
       "type": "collection",
       "content": [
-        "placeholder",
-        "introduction",
-        "localimplementatonfirst",
+        "start",
+        "blue",
+        "pink",
         "references",
         "resources"
       ],
@@ -16,30 +16,30 @@
       "name": "devroche"
     },
        
-    "placeholder": {
+    "start": {
       "type": "slideshow",
       "content": [
-        "placeholder_first"
+        "start_first"
         ],
       "valid": true,
-      "name": "placeholder first slide"
+      "name": "start first slide"
     },
-    "introduction": {
+    "blue": {
       "type": "slideshow",
       "content": [
-        "introduction_first",
-        "introduction_second",
-        "alignment_first",
-        "expertsinhaem_first"
+        "blue_first",
+        "blue_second",
+        "blue_third",
+        "blue_fourth"
       ],
       "valid": true,
-      "name": "introduction first slide"
+      "name": "blue first slide"
     },
-    "localimplementatonfirst": {
+    "pink": {
       "type": "slideshow",
       "content": [
-        "localimplementation_first",
-        "localimplementation_second"
+        "pink_first",
+        "pink_second"
       ],
       "valid": true,
       "name": "localimp first"
@@ -62,40 +62,40 @@
     }                 
   },
   "slides": {
-    "placeholder_first": {
+    "start_first": {
       "valid": true,
-      "name": "placeholder",
-      "file": "placeholder_first.html"
+      "name": "start",
+      "file": "start_first.html"
     },   
-    "introduction_first": {
+    "blue_first": {
       "valid": true,
-      "name": "introduction",
-      "file": "introduction_first.html"
+      "name": "blue",
+      "file": "blue_first.html"
     },
-    "introduction_second": {
+    "blue_second": {
       "valid": true,
-      "name": "introductionsecond",
-      "file": "introduction_second.html"
+      "name": "bluesecond",
+      "file": "blue_second.html"
     },
-    "alignment_first": {
+    "blue_third": {
       "valid": true,
       "name": "alignment",
-      "file": "alignment_first.html"
+      "file": "blue_third.html"
     },
-    "expertsinhaem_first": {
+    "blue_fourth": {
       "valid": true,
       "name": "expertsinhaem",
-      "file": "expertsinhaem_first.html"
+      "file": "blue_fourth.html"
     },
-    "localimplementation_first": {
+    "pink_first": {
       "valid": true,
       "name": "localimplementaton",
-      "file": "localimplementation_first.html"
+      "file": "pink_first.html"
     },
-    "localimplementation_second": {
+    "pink_second": {
       "valid": true,
       "name": "localimplementaton second",
-      "file": "localimplementation_second.html"
+      "file": "pink_second.html"
     }, 
     "references_only": {
       "valid": true,
