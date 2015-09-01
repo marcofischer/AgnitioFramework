@@ -27,183 +27,156 @@ clear: left;
 margin: 0 0 0 140px;
 }
 
-#resources_home #info_window.one {
+#resources_home #scrollable_window1 {
 position: absolute;
-top: 0;
+bottom: 43px;
 left: 0;
 width: 100%;
 height: 100%;
 z-index: 210;
 display: none;
-background: url('../../content/img/resourceshome/box_one_info.png') bottom center no-repeat #333;
+background: url('../../content/img/resourceshome/box_one_bg.png') bottom center no-repeat #333;
 background-size: 898px 656px;
 }
 
-#resources_home #info_window.two {
+
+#resources_home #scrollable_window2 {
 position: absolute;
-top: 0;
+bottom: 43px;
 left: 0;
 width: 100%;
 height: 100%;
 z-index: 210;
 display: none;
-background: url('../../content/img/resourceshome/box_two_info.png') bottom center no-repeat #333;
+background: url('../../content/img/resourceshome/box_two_bg.png') bottom center no-repeat #333;
 background-size: 898px 656px;
 }
 
-#resources_home #info_window.four {
+#resources_home #scrollable_window3 {
 position: absolute;
-top: 0;
+bottom: 43px;
 left: 0;
 width: 100%;
 height: 100%;
 z-index: 210;
 display: none;
-background: url('../../content/img/resourceshome/box_four_info.png') bottom center no-repeat #333;
+background: url('../../content/img/resourceshome/box_three_bg.png') bottom center no-repeat #333;
 background-size: 898px 656px;
 }
 
 
-#resources_home #info_window.five {
+#resources_home #scrollable_window4 {
 position: absolute;
-top: 0;
+bottom: 43px;
 left: 0;
 width: 100%;
 height: 100%;
 z-index: 210;
 display: none;
-background: url('../../content/img/resourceshome/box_five_info.png') bottom center no-repeat #333;
+background: url('../../content/img/resourceshome/box_four_bg.png') bottom center no-repeat #333;
 background-size: 898px 656px;
 }
 
-#resources_home #info_window.seven {
+
+#resources_home #scrollable_window5 {
 position: absolute;
-top: 0;
+bottom: 43px;
 left: 0;
 width: 100%;
 height: 100%;
 z-index: 210;
 display: none;
-background: url('../../content/img/resourceshome/box_seven_info.png') bottom center no-repeat #333;
+background: url('../../content/img/resourceshome/box_five_bg.png') bottom center no-repeat #333;
 background-size: 898px 656px;
 }
 
-#resources_home #info_window.eight {
+#resources_home #scrollable_window6 {
 position: absolute;
-top: 0;
+bottom: 43px;
 left: 0;
 width: 100%;
 height: 100%;
 z-index: 210;
 display: none;
-background: url('../../content/img/resourceshome/box_eight_info.png') bottom center no-repeat #333;
+background: url('../../content/img/resourceshome/box_six_bg.png') bottom center no-repeat #333;
 background-size: 898px 656px;
 }
 
-#resources_home #scrollable_window1.three {
+#resources_home #scrollable_window7 {
 position: absolute;
-top: 0;
+bottom: 43px;
 left: 0;
 width: 100%;
 height: 100%;
 z-index: 210;
 display: none;
-background: url('../../content/img/resourceshome/box_three_info.png') bottom center no-repeat #333;
+background: url('../../content/img/resourceshome/box_seven_bg.png') bottom center no-repeat #333;
 background-size: 898px 656px;
 }
 
-#resources_home #scrollable_window1.threemore {
+#resources_home #scrollable_window8 {
 position: absolute;
-top: 0;
+bottom: 43px;
 left: 0;
 width: 100%;
 height: 100%;
 z-index: 210;
 display: none;
-background: url('../../content/img/resourceshome/box_three_info2.png') bottom center no-repeat #333;
+background: url('../../content/img/resourceshome/box_eight_bg.png') bottom center no-repeat #333;
 background-size: 898px 656px;
 }
 
-#resources_home #scrollable_window2.six {
+#resources_home #scrollable_window9 {
 position: absolute;
-top: 0;
+bottom: 43px;
 left: 0;
 width: 100%;
 height: 100%;
 z-index: 210;
 display: none;
-background: url('../../content/img/resourceshome/box_six_info.png') bottom center no-repeat #333;
+background: url('../../content/img/resourceshome/box_nine_bg.png') bottom center no-repeat #333;
 background-size: 898px 656px;
 }
 
-#resources_home #scrollable_window2.sixmore {
+#resources_home #scrollable_window10 {
 position: absolute;
-top: 0;
+bottom: 43px;
 left: 0;
 width: 100%;
 height: 100%;
 z-index: 210;
 display: none;
-background: url('../../content/img/resourceshome/box_six_info2.png') bottom center no-repeat #333;
+background: url('../../content/img/resourceshome/box_ten_bg.png') bottom center no-repeat #333;
 background-size: 898px 656px;
 }
 
-#resources_home #scrollable_window4.ten {
+
+
+
+#scrollable_window1 .container, #scrollable_window2 .container, #scrollable_window3 .container, 
+#scrollable_window4 .container, #scrollable_window5 .container, #scrollable_window6 .container,
+#scrollable_window7 .container, #scrollable_window8 .container, #scrollable_window9 .container,
+#scrollable_window10 .container {
+width: 556px;
+height: 540px;
+overflow-y: auto;
+overflow-x: hidden;
 position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: 210;
+top: 172px;
+left: 350px;
 display: none;
-background: url('../../content/img/resourceshome/box_ten_info.png') bottom center no-repeat #333;
-background-size: 898px 656px;
 }
 
-#resources_home #scrollable_window4.tenmore {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: 210;
-display: none;
-background: url('../../content/img/resourceshome/box_ten_info2.png') bottom center no-repeat #333;
-background-size: 898px 656px;
+#globalClose {
+	position: absolute;
+    top: 67px;
+    right: 65px;
+    height: 50px;
+    width: 50px;
+    z-index: 400;
 }
 
-#resources_home #scrollable_window3.nine {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: 210;
-display: none;
-background: url('../../content/img/resourceshome/box_nine_info.png') bottom center no-repeat #333;
-background-size: 898px 656px;
+.container img {
+display: none;	
 }
 
-#resources_home #scrollable_window3.ninemore {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: 210;
-display: none;
-background: url('../../content/img/resourceshome/box_nine_info2.png') bottom center no-repeat #333;
-background-size: 898px 656px;
-}
-
-#resources_home #scrollable_window3.ninemore2 {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: 210;
-display: none;
-background: url('../../content/img/resourceshome/box_nine_info3.png') bottom center no-repeat #333;
-background-size: 898px 656px;
-}

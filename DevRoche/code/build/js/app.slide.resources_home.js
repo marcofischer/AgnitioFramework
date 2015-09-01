@@ -15,10 +15,7 @@ document.addEventListener('presentationInit', function() {
       boxNine: "#nine",
       boxTen: "#ten",
       shutBoxes: "#info_window",
-      dontShutBoxes1: "#scrollable_window1",
-      dontShutBoxes2: "#scrollable_window2",
-      dontShutBoxes3: "#scrollable_window3",
-      dontShutBoxes4: "#scrollable_window4"
+      globalClose: "#globalClose"
 
     },
     onEnter: function(ele) {
@@ -35,10 +32,7 @@ document.addEventListener('presentationInit', function() {
       app.addEvent('tap', slide.boxNineLoad, slide.element.boxNine);
       app.addEvent('tap', slide.boxTenLoad, slide.element.boxTen);
       app.addEvent('tap', slide.shutBoxesNow, slide.element.shutBoxes);
-      app.addEvent('tap', slide.dontShutBoxesNow1, slide.element.dontShutBoxes1);
-      app.addEvent('tap', slide.dontShutBoxesNow2, slide.element.dontShutBoxes2);
-      app.addEvent('tap', slide.dontShutBoxesNow3, slide.element.dontShutBoxes3);
-      app.addEvent('tap', slide.dontShutBoxesNow4, slide.element.dontShutBoxes4);
+      app.addEvent('tap', slide.closeIt, slide.element.globalClose);
 
        $('#menu').hide();           
     },
@@ -48,120 +42,64 @@ document.addEventListener('presentationInit', function() {
     },
 
     boxOneLoad: function(e) {
-    $(currentSlide + ' #info_window').removeClass();
-    $(currentSlide + ' #info_window').addClass("one");
-    $(currentSlide + ' #info_window.one').show();
+    $(currentSlide + ' #scrollable_window1').show();    
+    $(currentSlide + ' #scrollable_window1 .container').show();
+    $(currentSlide + ' #scrollable_window1 .container img').show();
     },
     boxTwoLoad: function(e) {
-    $(currentSlide + ' #info_window').removeClass();
-    $(currentSlide + ' #info_window').addClass("two");
-    $(currentSlide + ' #info_window.two').show();
+    $(currentSlide + ' #scrollable_window2').show();    
+    $(currentSlide + ' #scrollable_window2 .container').show();
+    $(currentSlide + ' #scrollable_window2 .container img').show();
     },
     boxThreeLoad: function(e) {
-    $(currentSlide + ' #info_window').removeClass();    
-    $(currentSlide + ' #scrollable_window1').addClass("three");
-    $(currentSlide + ' #scrollable_window1.three').show();
+    $(currentSlide + ' #scrollable_window3').show();    
+    $(currentSlide + ' #scrollable_window3 .container').show();
+    $(currentSlide + ' #scrollable_window3 .container img').show();
     },
     boxFourLoad: function(e) {
-    $(currentSlide + ' #info_window').removeClass();    
-    $(currentSlide + ' #info_window').addClass("four");
-    $(currentSlide + ' #info_window.four').show();
+    $(currentSlide + ' #scrollable_window4').show();    
+    $(currentSlide + ' #scrollable_window4 .container').show();
+    $(currentSlide + ' #scrollable_window4 .container img').show();
     },
     boxFiveLoad: function(e) {
-    $(currentSlide + ' #info_window').removeClass();    
-    $(currentSlide + ' #info_window').addClass("five");
-    $(currentSlide + ' #info_window.five').show();
+    $(currentSlide + ' #scrollable_window5').show();    
+    $(currentSlide + ' #scrollable_window5 .container').show();
+    $(currentSlide + ' #scrollable_window5 .container img').show();
     },
     boxSixLoad: function(e) {
-    $(currentSlide + ' #info_window').removeClass();    
-    $(currentSlide + ' #scrollable_window2').addClass("six");
-    $(currentSlide + ' #scrollable_window2.six').show();
+    $(currentSlide + ' #scrollable_window6').show();    
+    $(currentSlide + ' #scrollable_window6 .container').show();
+    $(currentSlide + ' #scrollable_window6 .container img').show();
     },
     boxSevenLoad: function(e) {
-    $(currentSlide + ' #info_window').removeClass();    
-    $(currentSlide + ' #info_window').addClass("seven");
-    $(currentSlide + ' #info_window.seven').show();
+    $(currentSlide + ' #scrollable_window7').show();    
+    $(currentSlide + ' #scrollable_window7 .container').show();
+    $(currentSlide + ' #scrollable_window7 .container img').show();
     },
     boxEightLoad: function(e) {
-    $(currentSlide + ' #info_window').removeClass();    
-    $(currentSlide + ' #info_window').addClass("eight");
-    $(currentSlide + ' #info_window.eight').show();
+    $(currentSlide + ' #scrollable_window8').show();    
+    $(currentSlide + ' #scrollable_window8 .container').show();
+    $(currentSlide + ' #scrollable_window8 .container img').show();
     },
     boxNineLoad: function(e) {
-    $(currentSlide + ' #info_window').removeClass();    
-    $(currentSlide + ' #scrollable_window3').addClass("nine");
-    $(currentSlide + ' #scrollable_window3.nine').show();
+    $(currentSlide + ' #scrollable_window9').show();    
+    $(currentSlide + ' #scrollable_window9 .container').show();
+    $(currentSlide + ' #scrollable_window9 .container img').show();
     },
     boxTenLoad: function(e) {
-    $(currentSlide + ' #info_window').removeClass();    
-    $(currentSlide + ' #scrollable_window4').addClass("ten");
-    $(currentSlide + ' #scrollable_window4.ten').show();
+    $(currentSlide + ' #scrollable_window10').show();    
+    $(currentSlide + ' #scrollable_window10 .container').show();
+    $(currentSlide + ' #scrollable_window10 .container img').show();
     },
-
-    dontShutBoxesNow1: function(e) {
-    $(currentSlide + ' #scrollable_window1').removeClass();
-    $(currentSlide + ' #scrollable_window1').addClass('threemore');
-
-        $('#scrollable_window1.threemore').on('tap', function() {
-        $(this).hide();
-        $(this).removeClass();
-    });
-
-    }, 
-
 
      shutBoxesNow: function(e) {
     $(currentSlide + ' #info_window').hide();      
     },
 
-    dontShutBoxesNow2: function(e) {
-    $(currentSlide + ' #scrollable_window2').removeClass();
-    $(currentSlide + ' #scrollable_window2').addClass('sixmore');
+    closeIt: function(e) {
+     console.log('hello');
+    $(currentSlide + ' .togg').hide();
 
-        $('#scrollable_window2.sixmore').on('tap', function() {
-        $(this).hide();
-        $(this).removeClass();
-    });
-
-    }, 
-
-    dontShutBoxesNow3: function(e) {
-
-    $(currentSlide + ' #scrollable_window3').removeClass();
-    $(currentSlide + ' #scrollable_window3').addClass('ninemore');
-
-    $(currentSlide + ' #scrollable_window3.ninemore').on('tap', function() {
-    $(currentSlide + ' #scrollable_window3').removeClass();
-    $(currentSlide + ' #scrollable_window3').addClass('ninemore2');
-      console.log(this);
-
-          $(currentSlide + ' #scrollable_window3.ninemore2').on('tap', function() {
-    $(this).hide();
-    $(this).removeClass();
-    });
-
-
-   });
-
-
-    },
-
-       dontShutBoxesNow4: function(e) {
-    $(currentSlide + ' #scrollable_window4').removeClass();
-    $(currentSlide + ' #scrollable_window4').addClass('tenmore');
-
-        $('#scrollable_window4.tenmore').on('tap', function() {
-        $(this).hide();
-        $(this).removeClass();
-    });
-    
-
-
-
-    }, 
-
-     shutBoxesNow: function(e) {
-    $(currentSlide + ' #info_window').hide();      
     }
 
 
