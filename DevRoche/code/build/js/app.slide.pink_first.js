@@ -7,7 +7,7 @@ document.addEventListener('presentationInit', function() {
       toggleMenuButton: "#toggleMenu",
       goHome: "#goHome",
       loadWindow: "#text",
-      closeWindow: "#info_window"
+      closeWindow: "#closeWindow"
     },
     onEnter: function(ele) {
       app.addEvent('tap', slide.windowLoader, slide.element.loadWindow);
@@ -20,7 +20,9 @@ document.addEventListener('presentationInit', function() {
     },
 
     windowLoader: function(e) {
-    $(currentSlide + ' #info_window').show();
+    $(currentSlide + ' #info_window').show();    
+    $(currentSlide + ' #info_window .container').show();
+    $(currentSlide + ' #info_window .container img').show();
     },
 
     windowCloser: function(e) {
