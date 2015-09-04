@@ -1,11 +1,11 @@
 document.addEventListener('presentationInit', function() {
 
-    var slide = app.slide.pink_fifth = {
+    var slide = app.slide.green_fifth = {
     elements: {
     },
 
     onEnter: function(ele) {
-         $('#menu').hide();
+      $('#menu').hide();
     },
 
     onExit: function(ele) {

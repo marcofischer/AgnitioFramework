@@ -1,0 +1,74 @@
+#green_first {
+    background: #80b691;
+    position: relative;
+}
+
+#green_first h1 {
+   font-size: 31px;
+   position: relative;
+   top: 380px;
+   width:400px;
+   left: 60px;
+   color: #FFF; 
+}
+
+#green_first #text {
+    width: 1024px;
+    position: relative;
+    bottom: 0;
+    left: -5px;
+}
+
+#green_first #cga, #green_first #cci, #green_first #cirs {
+position: absolute;
+bottom: 121px;
+height: 80px;
+width: 80px;
+z-index: 200;
+}
+
+#green_first #cga {
+left: 514px;
+}
+
+#green_first #cci {
+left: 610px;
+}
+
+#green_first #cirs {
+left: 710px;
+}
+
+#green_first #window_cga, #green_first #window_cci, #green_first #window_cirs {
+position: absolute;
+bottom: 43px;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 210;
+display: none;
+}
+
+#green_first #window_cga {
+background: url('../../content/img/green_first/cga.png') bottom center no-repeat #333;
+background-size: 898px 656px;
+}
+
+#green_first #window_cci {
+background: url('../../content/img/green_first/cci.png') bottom center no-repeat #333;
+background-size: 898px 656px;
+}
+
+#green_first #window_cirs {
+background: url('../../content/img/green_first/cirs.png') bottom center no-repeat #333;
+background-size: 898px 656px;
+}
+
+#green_first #closer {
+  position: absolute;
+    top: 67px;
+    right: 65px;
+    height: 50px;
+    width: 50px;
+    z-index: 400;  
+}

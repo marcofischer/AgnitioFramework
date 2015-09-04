@@ -167,7 +167,7 @@ left: 350px;
 display: none;
 }
 
-#globalClose {
+#resources_home #globalClose {
 	position: absolute;
     top: 67px;
     right: 65px;
@@ -176,7 +176,7 @@ display: none;
     z-index: 400;
 }
 
-.container img {
+#resources_home .container img {
 display: none;	
 width: 570px;
 }

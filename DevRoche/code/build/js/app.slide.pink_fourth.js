@@ -1,6 +1,6 @@
 document.addEventListener('presentationInit', function() {
 
-    var slide = app.slide.pink_second = {
+    var slide = app.slide.pink_fourth = {
     elements: {
     },
 

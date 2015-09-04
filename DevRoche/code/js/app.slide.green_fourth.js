@@ -1,0 +1,1 @@
+document.addEventListener("presentationInit",function(){app.slide.green_fourth={elements:{},onEnter:function(n){$("#menu").hide()},onExit:function(n){$("#menu .hasChildren").next().slideUp()}}});
