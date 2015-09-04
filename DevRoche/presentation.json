@@ -9,6 +9,7 @@
         "start",
         "blue",
         "pink",
+        "green",
         "references",
         "resources"
       ],
@@ -39,11 +40,28 @@
       "type": "slideshow",
       "content": [
         "pink_first",
-        "pink_second"
+        "pink_second",
+        "pink_third",
+        "pink_fourth",
+        "pink_fifth",
+        "pink_sixth"
       ],
       "valid": true,
       "name": "localimp first"
     },
+    "green": {
+      "type": "slideshow",
+      "content": [
+        "green_first",
+        "green_second",
+        "green_third",
+        "green_fourth",
+        "green_fifth",
+        "green_sixth"
+      ],
+      "valid": true,
+      "name": "localimp first"
+    },    
     "references": {
       "type": "slideshow",
       "content": [
@@ -96,6 +114,56 @@
       "valid": true,
       "name": "localimplementaton second",
       "file": "pink_second.html"
+    },
+    "pink_third": {
+      "valid": true,
+      "name": "geriatric oncology liaison",
+      "file": "pink_third.html"
+    }, 
+    "pink_fourth": {
+      "valid": true,
+      "name": "patient benefits from MDTs",
+      "file": "pink_fourth.html"
+    }, 
+    "pink_fifth": {
+      "valid": true,
+      "name": "NHS Outcomes Framework",
+      "file": "pink_fifth.html"
+    }, 
+    "pink_sixth": {
+      "valid": true,
+      "name": "Local implementation of integrated care",
+      "file": "pink_sixth.html"
+    }, 
+    "green_first": {
+      "valid": true,
+      "name": "Local implementation of integrated care",
+      "file": "green_first.html"
+    }, 
+    "green_second": {
+      "valid": true,
+      "name": "Local implementation of integrated care",
+      "file": "green_second.html"
+    }, 
+    "green_third": {
+      "valid": true,
+      "name": "Local implementation of integrated care",
+      "file": "green_third.html"
+    }, 
+    "green_fourth": {
+      "valid": true,
+      "name": "Local implementation of integrated care",
+      "file": "green_fourth.html"
+    }, 
+    "green_fifth": {
+      "valid": true,
+      "name": "Local implementation of integrated care",
+      "file": "green_fifth.html"
+    }, 
+    "green_sixth": {
+      "valid": true,
+      "name": "Local implementation of integrated care",
+      "file": "green_sixth.html"
     }, 
     "references_only": {
       "valid": true,
