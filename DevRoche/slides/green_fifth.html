@@ -1,7 +1,255 @@
 <article id="green_fifth" class="slide" data-ag-name="Introduction slide">
   <div class="basic">
-      
- <img src="content/img/green_fifth/text.png" alt="" id="text" />
+
+<!-- Very Good Form -->
+
+<div id="firstcol">
+
+  <fieldset>
+<div class="mover">
+		<h2>Rituximab</h2>
+
+		<!-- input --> <input disabled type="text" id="rituximab_launch" name="rituximab_one" />
+
+		<h2>cycles every</h2>
+		  
+		<!-- input --> <input disabled type="text" id="rituximab_launch2" name="rituximab_two" />
+
+		<h2>days</h2>
+</div>
+ 
+  </fieldset>
+
+
+  <fieldset>
+<div class="mover">
+		<h2>CHOP</h2>
+
+		<!-- input --> <input type="text" id="chop_launch" name="chop_one" />
+
+		<h2>cycles every</h2>
+		  
+		<!-- input --> <input type="text" id="chop_launch2" name="chop_two" />
+
+		<h2>days</h2>
+  </div>
+  </fieldset>
+
+
+  <fieldset>
+<div class="mover">
+		<h2>ACVBP</h2>
+
+		<!-- input --> <input type="text" id="acvbp_launch" name="acvbp_one" />
+
+		<h2>cycles every</h2>
+		  
+		<!-- input --> <input type="text" id="acvbp_launch2" name="acvbp_two" />
+
+		<h2>days</h2>
+  </div>
+  </fieldset>
+
+
+
+  <fieldset>
+<div class="mover">
+		<h2>Mini CHOP</h2>
+
+		<!-- input --> <input type="text" id="mchop_launch" name="mchop_one" />
+
+		<h2>cycles every</h2>
+		  
+		<!-- input --> <input type="text" id="mchop_launch2" name="mchop_two" />
+
+		<h2>days</h2>
+  </div>
+  </fieldset>
+
+</div> <!-- end of col one -->
+
+
+<div id="secondcol">
+
+
+	<fieldset id="radiotherapy">
+
+		<h2>Radiotherapy</h2>
+
+	  <input type="radio" value="yes" name="radiotherapy" id="radiotherapy_yes">
+	  <label for="radiotherapy_yes">
+	  Yes
+	  </label>
+
+	  <input type="radio" value="no" name="radiotherapy" id="radiotherapy_no">
+	  <label for="radiotherapy_no">
+	  No
+	  </label>
+
+	</fieldset>
+
+
+	<fieldset id="autologous">
+
+		<h2>Autologous stem cell transplant</h2>
+
+	  <input type="radio" value="yes" name="autologous" id="autologous_yes">
+	  <label for="autologous_yes">
+	  Yes
+	  </label>
+
+	  <input type="radio" value="no" name="autologous" id="autologous_no">
+	  <label for="autologous_no">
+	  No
+	  </label>
+
+	</fieldset>
+
+
+	<fieldset id="cns">
+	<div class="mover">
+		<h2>CNS <br />prophylaxis</h2>
+
+	  <input type="radio" value="yes" name="cns_launch" id="cns_yes">
+	  <label for="cns_yes">
+	  Yes
+	  </label>
+
+	  <input type="radio" value="no" name="cns_launch2" id="cns_no">
+	  <label for="cns_no">
+	  No
+	  </label>
+
+	  <span id="with">with</span>
+
+	  <!-- additional q -->
+
+	  <input type="text" value="" name="cns_second_answer_launch" id="cns_long_answer" />
+
+	  <!--
+
+	  <input type="radio" value="All high risk patients" name="cns_second" id="cns_all">
+	  <label for="cns_all">
+	  All high risk patients
+	  </label>
+
+	  <input type="radio" value="Only >1 extranodal site or elevated LDH" name="cns_second" id="cns_only">
+	  <label for="cns_only">
+	  Only >1 extranodal site or elevated LDH
+	  </label>
+
+	-->
+
+	</div><!-- end of mover -->
+	</fieldset>
+
+
+	<fieldset id="objectivetoolgeriatric">
+
+		<h2>Objective geriatric tool to <br />determine treatment choice?</h2>
+
+	  <input type="radio" value="yes" name="objectivetool" id="objectivetool_yes">
+	  <label for="objectivetool_yes">
+	  Yes
+	  </label>
+
+	  <input type="radio" value="no" name="objectivetool" id="objectivetool_no">
+	  <label for="objectivetool_no">
+	  No
+	  </label>
+
+	</fieldset>
+
+
+	<fieldset id="inbeddays">
+
+		<h2>Number of in-patient bed days</h2>
+
+	<!-- additional q -->
+
+	<input type="text" value="" name="inbeddays_answer_launch" id="inbeddays_answer" />
+
+	<!--
+	 
+	  <input type="radio" value="yes" name="inbed" id="inbed_one">
+	  <label for="inbed_one">
+	  0 - 4
+	  </label>
+
+	  <input type="radio" value="no" name="inbed" id="inbed_two">
+	  <label for="inbed_two">	 
+	  5-9
+	  </label>	
+
+	  <input type="radio" value="yes" name="inbed" id="inbed_three">
+	  <label for="inbed_three">
+	  10-14
+	  </label>
+
+	  <input type="radio" value="no" name="inbed" id="inbed_four">
+	  <label for="inbed_four">
+	  15+
+	  </label>
+
+	-->
+
+	</fieldset>
+
+
+
+
+</div> <!-- end of col two -->
+
+ <div class="formOuter">
+
+  	<h2 class="reset">Rituximab</h2>
+
+  <fieldset class="reset">
+
+  	<input type="radio" value="4" name="rituximab_one" id="rituximab_one">
+	  <label for="rituximab_one">
+	  4
+	  </label>
+
+	  <input type="radio" value="6" name="rituximab_one" id="rituximab_two">
+	  <label for="rituximab_two">	 
+	  6
+	  </label>	
+
+	  <input type="radio" value="8" name="rituximab_one" id="rituximab_three">
+	  <label for="rituximab_three">
+	  8
+	  </label>
+
+  </fieldset>
+<h2 class="reset">cycles every</h2>
+<fieldset class="reset">
+
+
+
+  	<input type="radio" value="7" name="rituximab_cycle_one" id="rituximab_cycle_one">
+	  <label for="rituximab_cycle_one">
+	  7
+	  </label>
+
+	  <input type="radio" value="14" name="rituximab_cycle_two" id="rituximab_cycle_two">
+	  <label for="rituximab_cycle_two">	 
+	  14
+	  </label>	
+
+	  <input type="radio" value="21" name="rituximab_cycle_three" id="rituximab_cycle_three">
+	  <label for="rituximab_cycle_three">
+	  21
+	  </label>
+
+
+
+</fieldset>
+	  <h2 class="reset">days</h2>
+
+</div>
+
+
 
 </div><!-- end basic -->
       </article>

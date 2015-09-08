@@ -1,68 +1,153 @@
 <article id="green_fourth" class="slide" data-ag-name="Introduction slide">
   <div class="basic">
+
+
       
 <div id="firstcol">
 
-	<div id="agerange">
+	<fieldset id="agerange">
 
-		<p><span>70-80</span></p>
-		<p><span>60-70</span></p>
-		<p><span>50-60</span></p>
-		<p><span>40-50</span></p>
-		<p><span>30-40</span></p>
+		<h2>Age range</h2>
 
-	</div>
+	  <input type="radio" value="70-80" name="age" id="ar_seventy_to_eighty">
+	  	<label for="ar_seventy_to_eighty">
+		70-80
+		</label>
+	
+	 <input type="radio" value="60-70" name="age" id="ar_sixty_to_seventy">
+		<label for="ar_sixty_to_seventy">
+		60-70
+		</label>
+
+	  <input type="radio" value="50-60" name="age" id="ar_fifty_to_sixty">
+	  <label for="ar_fifty_to_sixty">
+	  50-60
+	  </label>
+	
+	  <input type="radio" value="40-50" name="age" id="ar_forty_to_fifty">
+	  <label for="ar_forty_to_fifty">
+	  40-50
+	  </label>
+
+	  <input type="radio" value="30-40" name="age" id="ar_thirty_to_forty">
+	  <label for="ar_thirty_to_forty">
+	  30-40
+	  </label>
+
+	</fieldset>
 
 
-	<div id="CGA">
+	<fieldset id="CGA">
 
-		<p><span>Yes</span></p>
-		<p><span>No</span></p>
+		<h2>CGA?</h2>
 
-	</div>
+	  <input type="radio" value="yes" name="cga" id="cga_yes">
+	  <label for="cga_yes">
+	  Yes
+	  </label>
+
+	  <input type="radio" value="no" name="cga" id="cga_no">
+	  <label for="cga_no">
+	  No
+	  </label>
+
+	</fieldset>
 
 
-	<div id="performancestatus">
+	<fieldset id="performancestatus">
 
-		<p><span>0</span></p>
-		<p><span>1</span></p>
-		<p><span>2</span></p>
-		<p><span>>2</span></p>
+		<h2>Perfomance status</h2>
 
-	</div>
+	  <input type="radio" value="0" name="ps" id="ps_zero">
+	  <label for="ps_zero">
+	  0
+	  </label>
 
-	<p>CGA - Comprehensive Geriatric Assessment<br />
-R-IPI - Revised International Prognostic Factor</p>
+	  <input type="radio" value="q" name="ps" id="ps_one">
+	  <label for="ps_one">
+	  1
+	  </label>
 
+	  <input type="radio" value="2" name="ps" id="ps_two">
+	  <label for="ps_two">
+	  2
+	  </label>
+
+	  <input type="radio" value=">2" name="ps" id="ps_gt_two">
+	  <label for="ps_gt_two">
+	  >2
+	  </label>
+
+
+	</fieldset>
 
 </div>
 
 
 <div id="secondcol">
 
-	<div id="symptomsatpresentation">
+	<fieldset id="symptomsatpresentation">
 
-		<p>Symptoms at presentation<sup>14</sup></p>
+		<h2>Symptoms at presentation<sup>14</sup></h2>
 
-		<p><span>Weight loss</span></p>
-		<p><span>Reduced appetite</span></p>
-		<p><span>Enlarged lymph nodes</span></p>
-		<p><span>Night sweats</span></p>
-		<p><span>Fatigue</span></p>		
-		<p><span>Shortness of breath</span></p>		
-		<p><span>Abdominal pain</span></p>		
+	  <input type="checkbox" value="weight loss" name="symptoms" id="sp_weightloss">
+	  <label for="sp_weightloss">
+	  Weight loss
+	  </label>
 
-	</div>
+	  <input type="checkbox" value="reduced appetite" name="symptoms" id="sp_reducedappetite">
+	  <label for="sp_reducedappetite">
+	  Reduced appetite
+	  </label>
 
-	<div id="extranodalsites">
+	  <input type="checkbox" value="enlarged lymph nodes" name="symptoms" id="sp_enlargedlymphnodes">
+	  <label for="sp_enlargedlymphnodes">
+	  Enlarged lymph nodes
+	  </label>
 
-		<p>Extranodal sites</p>
+	  <input type="checkbox" value="night sweats" name="symptoms" id="sp_nightsweats">
+	  <label for="sp_nightsweats">
+	  Night sweats
+	  </label>
 
-		<p><span>0</span></p>
-		<p><span>1-2</span></p>
-		<p><span>>2</span></p>
+	  <input type="checkbox" value="fatigue" name="symptoms" id="sp_fatigue">
+	  <label for="sp_fatigue">
+	  Fatigue
+	  </label>
 
-	</div>
+	  <input type="checkbox" value="shortness of breath" name="symptoms" id="sp_shortnessofbreath">
+	  <label for="sp_shortnessofbreath">
+	  Shortness of breath
+	  </label>
+
+	  <input type="checkbox" value="abdominalpain" name="symptoms" id="sp_abdominalpain">
+	  <label for="sp_abdominalpain">
+	  Abdominal pain
+	  </label>
+
+
+	</fieldset>
+
+	<fieldset id="extranodalsites">
+
+		<h2>Extranodal sites</h2>
+
+	  <input type="radio" value="0" name="extradonalsites" id="es_one">
+	  <label for="es_one">
+	  0
+	  </label>
+
+	  <input type="radio" value="1" name="extradonalsites" id="es_one_two">
+	  <label for="es_one_two">
+	  1-2
+	  </label>
+
+	  <input type="radio" value=">2" name="extradonalsites" id="es_gt_two">
+	  <label for="es_gt_two">
+	  >2
+	  </label>
+
+	</fieldset>
 
 
 </div>
@@ -70,15 +155,73 @@ R-IPI - Revised International Prognostic Factor</p>
 
 <div id="thirdcol">
 
-		<div id="LDH">
+		<fieldset id="LDH">
 
-		<p>LDH</p>
+		<h2>LDH</h2>
 
-		<p><span>< Upper limit normal</span></p>
-		<p><span>> Upper limit normal</span></p>
+		  <input type="radio" value="< Upper limit normal" name="ldh" id="ldh_lt_limit">
+		  <label for="ldh_lt_limit">
+		  < Upper limit normal
+		  </label>
 
-	</div>
+		  <input type="radio" value="> Upper limit normal" name="ldh" id="ldh_gt_limit">
+		  <label for="ldh_gt_limit">
+		  > Upper limit normal
+		  </label>
 
+		</fieldset>
+
+
+
+		<fieldset id="tumourclassificationstage">
+
+		<h2>Tumour classification stage<sup>15</sup></h2>
+
+		  <input type="radio" value="I (1 lymph node group)" name="tumourclassificationstage" id="tcs_one">
+		  <label for="tcs_one">
+		  I (1 lymph node group)
+		  </label>
+
+		  <input type="radio" value="II (>1 lymph node group, same side of diaphragm)" name="tumourclassificationstage" id="tcs_two">
+		  <label for="tcs_two">
+		  II (>1 lymph node group, same side of diaphragm)
+		  </label>
+
+		  <input type="radio" value="III (>1 lymph node group, both sides of diaphragm)" name="tumourclassificationstage" id="tcs_three">
+		  <label for="tcs_three">
+		  III (>1 lymph node group, both sides of diaphragm)
+		  </label>
+
+		  <input type="radio" value="IV (>1 extranodal sites or lymph nodes + extranodal disease)" name="tumourclassificationstage" id="tcs_four">
+		  <label for="tcs_four">
+		  IV (>1 extranodal sites or lymph nodes + extranodal disease)
+		  </label>
+
+		</fieldset>
+
+
+
+		<fieldset id="R-IPI16">
+
+			<h2>R-IPI16</h2>
+
+		  <input type="radio" value="verygood" name="R-IPI16" id="r_verygood">
+		  <label for="r_verygood">
+		  Very good
+		  </label>
+  		  			
+		  <input type="radio" value="good" name="R-IPI16" id="r_good">
+		  <label for="r_good">
+		  Good
+		  </label>
+  		  			
+		  <input type="radio" value="poor" name="R-IPI16" id="r_poor">
+		  <label for="r_poor">
+		  Poor
+		  </label>
+  		  			
+
+		</fieldset>
 
 
 </div>
