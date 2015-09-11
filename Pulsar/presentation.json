@@ -1,0 +1,101 @@
+ {
+  "storyboard": [
+    "pulsar"
+  ],
+  "structures": {
+    "pulsar": {
+      "type": "collection",
+      "content": [
+        "home",
+        "about",
+        "philosophy",
+        "insight",
+        "pathways",
+        "hcp"
+      ],
+      "valid": true,
+      "name": "pulsar"
+    },
+       
+    "home": {
+      "type": "slideshow",
+      "content": [
+        "home_first"
+        ],
+      "valid": true,
+      "name": "home first slide"
+    },
+    "about": { 
+      "type": "slideshow",
+      "content": [
+        "about_first"
+      ],
+      "valid": true,
+      "name": "about first slide"
+    },
+    "philosophy": { 
+      "type": "slideshow",
+      "content": [
+        "philosophy_first"
+      ],
+      "valid": true,
+      "name": "localimp first"
+    },
+    "insight": {
+      "type": "slideshow",
+      "content": [
+        "insight_first"
+      ],
+      "valid": true,
+      "name": "localimp first"
+    },    
+    "pathways": {
+      "type": "slideshow",
+      "content": [
+        "pathways_first"
+      ],
+      "valid": true,
+      "name": "pathways slide"
+    },
+    "hcp": {
+      "type": "slideshow",
+      "content": [
+        "hcp_first"
+      ],
+      "valid": true,
+      "name": "HCP slide"
+    }                     
+  },
+  "slides": {
+    "home_first": {
+      "valid": true,
+      "name": "home",
+      "file": "home_first.html"
+    },   
+    "about_first": {
+      "valid": true,
+      "name": "about",
+      "file": "about_first.html"
+    },
+    "philosophy_first": {
+      "valid": true,
+      "name": "localimplementaton",
+      "file": "philosophy_first.html"
+    },
+    "insight_first": {
+      "valid": true,
+      "name": "Local implementation of integrated care",
+      "file": "insight_first.html"
+    },    
+    "pathways_first": {
+      "valid": true,
+      "name": "pathways page",
+      "file": "pathways_first.html"
+    },
+    "hcp_first": {
+      "valid": true,
+      "name": "HCP page",
+      "file": "hcp_first.html"
+    }
+  }
+}

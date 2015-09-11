@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">  
+  	<title>pulsar</title>
+    <link rel="stylesheet" href="all.css" type="text/css" media="screen" charset="utf-8">
+    <script src="code/js/zepto.js" type="text/javascript" charset="utf-8"></script>
+    <!--[if IE]>
+      <style>
+        .collection, .slideshow, .slide {float:left;}
+      </style>
+    <![endif]-->
+  </head>
+  <body>
+
+
+     
+    <div id="presentation">
+
+        <div id="topleft">
+      <ul>
+        <li id="goHome"><img src="content/img/global/icon_home.png" alt="" /></li>
+        <li id="toggleMenu"><img src="content/img/global/icon_menu.png" alt="" /></li>
+      </ul>
+  
+      <div id="menu">
+        <ul>
+          <li class="hasChildren" data-slideshow="" data-content="">About Us ></li>
+            <ul class="intro">
+              <li data-slideshow="about" data-content="about_first">About</li>
+              <li data-slideshow="philosophy" data-content="philosophy_first">Philosophy</li>
+              <li data-slideshow="insight" data-content="insight_first">Insight</li>
+          </ul>
+        </ul>
+          <ul class="local">
+         <li data-slideshow="pathways" data-content="pathways_first">Patient Outcome Pathways</li>
+         <li data-slideshow="hcp" data-content="hcp_first">HCP's</li>
+         </ul> 
+        </ul>
+      </div>
+     </div>
+
+
+
+   <!-- <nav id="mainmenu"></nav> -->
+   <section id="slideshows" class="slideshows">
+
+
+  </section>
+    <footer id="mainfooter">
+       <p>Copyright © 2015 Pulsar Healthcare</p>
+      </footer>
+     </div> 
+
+    <!-- iPLANNER BUNDLED JAVASCRIPT -->
+    <script src="../viewer/js/agnitio.js"></script>
+    <script>!window.ag && document.write(unescape('%3Cscript src="_framework/lib/agnitio.js"%3E%3C/script%3E'))</script>
+    
+    <!-- FRAMEWORK AND LIBRARIES -->  
+    <script src="_framework/lib/touchy.js" type="text/javascript" charset="utf-8"></script>
+    <script src="_framework/lib/draggy.js" type="text/javascript" charset="utf-8"></script>
+    <script src="_framework/lib/util.js" type="text/javascript" charset="utf-8"></script>
+    <script src="_framework/core.js" type="text/javascript" charset="utf-8"></script>
+    
+    <!-- MODULES --> 
+    <script src="modules/analytics/analytics.js" type="text/javascript" charset="utf-8"></script>
+    
+    <!-- CUSTOM APP JAVASCRIPT, ADD YOUR JAVASCRIPT HERE! -->  
+    
+
+  <script src="code/js/app.slide.home_first.js" type="text/javascript" charset="utf-8"></script>
+  <script src="code/js/app.slide.about_first.js" type="text/javascript" charset="utf-8"></script>
+  <script src="code/js/app.slide.philosophy_first.js" type="text/javascript" charset="utf-8"></script>
+  <script src="code/js/app.slide.insight_first.js" type="text/javascript" charset="utf-8"></script>
+  <script src="code/js/app.slide.pathways_first.js" type="text/javascript" charset="utf-8"></script>
+  <script src="code/js/app.slide.hcp_first.js" type="text/javascript" charset="utf-8"></script>
+  <script src="code/js/global_funcs.js" type="text/javascript" charset="utf-8"></script>
+
+    
+
+    <!-- APP SETUP -->
+    <script src="setup.js" type="text/javascript" charset="utf-8"></script>
+    
+  </body>
+</html>
