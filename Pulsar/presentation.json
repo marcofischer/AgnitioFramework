@@ -11,7 +11,8 @@
         "philosophy",
         "insight",
         "pathways",
-        "hcp"
+        "hcp",
+        "question1"
       ],
       "valid": true,
       "name": "pulsar"
@@ -64,6 +65,14 @@
       ],
       "valid": true,
       "name": "HCP slide"
+    }  ,     
+    "question1": {
+      "type": "slideshow",
+      "content": [
+        "question1_first"
+      ],
+      "valid": true,
+      "name": "Question 1 slide"
     }                     
   },
   "slides": {
@@ -96,6 +105,11 @@
       "valid": true,
       "name": "HCP page",
       "file": "hcp_first.html"
+    },    
+    "question1_first": {
+      "valid": true,
+      "name": "Question 1 page",
+      "file": "question1_first.html"
     }
   }
 }
