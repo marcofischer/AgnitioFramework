@@ -1,1 +1,1 @@
-document.addEventListener("presentationInit",function(){app.slide.video_first={elements:{},onEnter:function(n){$("#menu").hide()},onExit:function(n){$("#menu .hasChildren").next().slideUp()}}});
+document.addEventListener("presentationInit",function(){var e=app.slide.video_first={elements:{test:"#me"},onEnter:function(t){$("#menu").hide(),app.addEvent("tap",e.startVideo,e.element.test)},onExit:function(e){$("#menu .hasChildren").next().slideUp(),$("#me").pause;var t=$("#me").currentTime;console.log(t)},startVideo:function(e){$("#me").pause()}}});
