@@ -18,9 +18,12 @@
   
   // Initiate modules
   app.scroller = new Slidescroller();
-  app.analytics.init({ version: '0.1' });
+  // app.analytics.init({ version: '0.1' });
+  app.analytics.init({
+    version: '4.0'
+  });
   
   // Initialize presentation
-  app.init();
+  app.init('pulsar', 'home_first');
   
 })(window);

@@ -1,11 +1,11 @@
 document.addEventListener("presentationInit",function(){
-  var n=app.slide.hcp_first={
+  var slide = app.slide.hcp_first={
     elements:{Btn:"img"},
-    onEnter:function(t){
+    onEnter:function(ele){
       $("#menu").hide(),
-      app.addEvent("tap",n.showNext, document)        
+      app.addEvent("tap",slide.showNext, document)        
     },
-    onExit:function(n){
+    onExit:function(ele){
       $("#menu .hasChildren").next().slideUp();
 
       //submit position in items when leave slide
@@ -20,7 +20,7 @@ document.addEventListener("presentationInit",function(){
               path: app.getPath()
           });
     },
-    showNext:function(n){
+    showNext:function(e){
       //collect number of elements with the class active
       var pos = $(".btn.active").length;
       console.log(pos);

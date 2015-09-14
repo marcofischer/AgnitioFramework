@@ -1,17 +1,17 @@
 document.addEventListener("presentationInit",function(){
-  var e="#insight_first",
-    n=app.slide.insight_first={
+  var e = "#insight_first",
+    slide = app.slide.insight_first={
     elements:{
       togglehww:"#hww",
       closeWindow:"#closer"
     },
-    onEnter:function(e){
-      app.addEvent("tap", n.togglehwwwindow, n.element.togglehww),
-      app.addEvent("tap", n.windowCloser, n.element.closeWindow),
+    onEnter:function(ele){
+      app.addEvent("tap", slide.togglehwwwindow, slide.element.togglehww),
+      app.addEvent("tap", slide.windowCloser, slide.element.closeWindow),
       $("#menu").hide(),
       $("#cone,#ctwo,#cthree,#cfour,#cfive").hide()
     },
-    onExit:function(n){
+    onExit:function(ele){
       $(e+" #menu .hasChildren").next().slideUp()
     },
     togglehwwwindow:function(e){
@@ -22,7 +22,7 @@ document.addEventListener("presentationInit",function(){
       $("#cthree").delay(600).fadeIn("400"),
       $("#cfour").delay(900).fadeIn("400"),
       $("#cfive").delay(1200).fadeIn("400"),
-       app.addEvent('onDrop', n.monitorSlider, document);
+       app.addEvent('onDrop', slide.monitorSlider, document);
     },
     windowCloser:function(e){
       $("#window_hww").hide(),
