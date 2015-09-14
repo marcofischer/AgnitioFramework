@@ -6,14 +6,15 @@
     type:'json',
     manageMemory: true
   });
+/*
+ app.debug = (function() {
 
-// app.debug = (function() {
+   var api = ag.debug(true);
+   debug();
+  return api;
 
- //   var api = ag.debug(true);
- //   debug();
-  //  return api;
-
-//  }());
+  }());
+  */
   
   // Initiate modules
   app.scroller = new Slidescroller();

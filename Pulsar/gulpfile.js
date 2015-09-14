@@ -29,7 +29,7 @@ gulp.task('css', function () {
 
 gulp.task('watch', function() {
 
-	gulp.watch('code/build/js/*.js', ['compress']);
+  gulp.watch('code/build/js/*.js', ['compress']);
 	gulp.watch('code/build/css/*.css', ['css'])
 
 });
