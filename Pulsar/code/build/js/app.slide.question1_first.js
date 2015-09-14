@@ -2,34 +2,22 @@ document.addEventListener('presentationInit', function() {
 
     var slide = app.slide.question1_first = {
     elements: {
-      aboutBtn: "#aboutus",
-      philBtn: "#philosophy",
-      insBtn: "#insight"
+       slider1: "#slider1"
     },
 
     onEnter: function(ele) {
          $('#menu').hide();
-         app.addEvent('tap', slide.takemetoAbout, slide.element.aboutBtn);
-         app.addEvent('tap', slide.takemetoPhil, slide.element.philBtn);         
-         app.addEvent('tap', slide.takemetoIns, slide.element.insBtn);         
+         app.addEvent('change', slide.sliderShow, slide.element.slider1);
     },
 
     onExit: function(ele) {
     $('#menu .hasChildren').next().slideUp();
     },
 
-
-    takemetoAbout: function(e) {
-        app.goTo('pulsar', 'about', 'about_first')
-    },      
-
-    takemetoPhil: function(e) {
-        app.goTo('pulsar', 'philosophy', 'philosophy_first')
-    },   
-
-    takemetoIns: function(e) {
-        app.goTo('pulsar', 'insight', 'insight_first')
-    }    
+    sliderShow: function(e) {
+    var FinalVal = (this).value;   
+    // FinalVal stores the current number the user has selected
+    }
 
   };
 

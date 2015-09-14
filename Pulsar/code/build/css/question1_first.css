@@ -4,31 +4,19 @@
     position: relative;
 }
 
-#question1_first #aboutus {
-width: 130px;
-height: 125px;
+#question1_first #slider1 {
 position: absolute;
-top: 434px;
-left: 257px;
-
+top: 600px;
+left: 300px;	
+width: 400px
 }
 
-#question1_first #philosophy {
-width: 130px;
-height: 125px;
+#question1_first #showNum {
 position: absolute;
-top: 434px;
-left: 440px;
-
-	
-}
-
-#question1_first #insight {
-width: 130px;
-height: 125px;
-position: absolute;
-top: 434px;
-left: 625px;
-
-
+    top: 388px;
+    left: 478px;
+    font-size: 100px;
+    color: #CCC;
+    width: 65px;
+    text-align: center;
 }
