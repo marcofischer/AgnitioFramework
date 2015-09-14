@@ -22,7 +22,7 @@ document.addEventListener("presentationInit",function(){
 			$("#cthree").delay(600).fadeIn("400"),
 			$("#cfour").delay(900).fadeIn("400"),
 			$("#cfive").delay(1200).fadeIn("400"),
-			 app.addEvent('onDrop', slide.monitorSlider, document);
+			 app.addEvent('onDrop', n.monitorSlider, document);
 		},
 		windowCloser:function(e){
 			$("#window_hww").hide(),
