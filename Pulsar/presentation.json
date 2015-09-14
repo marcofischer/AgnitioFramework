@@ -1,23 +1,68 @@
  {
-  "storyboard": [
-    "pulsar"
-  ],
+  "slides": {
+    "home_first": {
+      "file": "home_first.html",
+      "valid": true,
+      "name": "home"
+    },   
+    "about_first": {
+      "valid": true,
+      "name": "about",
+      "file": "about_first.html"
+    },
+    "philosophy_first": {
+      "valid": true,
+      "name": "localimplementaton",
+      "file": "philosophy_first.html"
+    },
+    "insight_first": {
+      "valid": true,
+      "name": "Local implementation of integrated care",
+      "file": "insight_first.html"
+    },    
+    "pathways_first": {
+      "valid": true,
+      "name": "pathways page",
+      "file": "pathways_first.html"
+    },
+    "hcp_first": {
+      "valid": true,
+      "name": "HCP page",
+      "file": "hcp_first.html"
+    },    
+    "question1_first": {
+      "valid": true,
+      "name": "Question 1 page",
+      "file": "question1_first.html"
+    },
+    "question2_first": {
+      "valid": true,
+      "name": "Question 2 page",
+      "file": "question2_first.html"
+    }, 
+    "video_first": {
+      "valid": true,
+      "name": "Video page",
+      "file": "video_first.html"
+    }
+  },
+  "storyboard": [ "pulsar" ],
   "structures": {
     "pulsar": {
-      "type": "collection",
       "content": [
-        "home",
-        "about",
-        "philosophy",
-        "insight",
-        "pathways",
-        "hcp",
-        "question1",
-        "question2",
-        "video"
+          "home",
+          "about",
+          "philosophy",
+          "insight",
+          "pathways",
+          "hcp",
+          "question1",
+          "question2",
+          "video"
       ],
-      "valid": true,
-      "name": "pulsar"
+      "name": "pulsar",
+      "type": "collection",
+      "valid": true
     },
        
     "home": {
@@ -92,52 +137,5 @@
       "valid": true,
       "name": "Question 2 slide"
     }                     
-  },
-  "slides": {
-    "home_first": {
-      "valid": true,
-      "name": "home",
-      "file": "home_first.html"
-    },   
-    "about_first": {
-      "valid": true,
-      "name": "about",
-      "file": "about_first.html"
-    },
-    "philosophy_first": {
-      "valid": true,
-      "name": "localimplementaton",
-      "file": "philosophy_first.html"
-    },
-    "insight_first": {
-      "valid": true,
-      "name": "Local implementation of integrated care",
-      "file": "insight_first.html"
-    },    
-    "pathways_first": {
-      "valid": true,
-      "name": "pathways page",
-      "file": "pathways_first.html"
-    },
-    "hcp_first": {
-      "valid": true,
-      "name": "HCP page",
-      "file": "hcp_first.html"
-    },    
-    "question1_first": {
-      "valid": true,
-      "name": "Question 1 page",
-      "file": "question1_first.html"
-    },
-    "question2_first": {
-      "valid": true,
-      "name": "Question 2 page",
-      "file": "question2_first.html"
-    }, 
-    "video_first": {
-      "valid": true,
-      "name": "Video page",
-      "file": "video_first.html"
-    }
   }
 }
