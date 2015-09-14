@@ -23,6 +23,7 @@ document.addEventListener("presentationInit",function(){
     showNext:function(n){
       //collect number of elements with the class active
       var pos = $(".btn.active").length;
+      console.log(pos);
       //add class active from next element
       $(".btn").eq(pos).addClass('active');
     }
