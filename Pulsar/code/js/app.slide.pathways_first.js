@@ -10,6 +10,7 @@ document.addEventListener("presentationInit",function(){
 		},
 		onExit:function(n){
 			$("#menu .hasChildren").next().slideUp()
+			
 		},
 		medium: function(e){
 		},
