@@ -20,3 +20,25 @@ position: absolute;
     width: 65px;
     text-align: center;
 }
+
+#question1_first #slider1
+{
+    -webkit-appearance: none !important;
+    background: #CCC;
+    height: 3px;
+    width: 425px;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#question1_first #slider1::-webkit-slider-thumb
+{
+    -webkit-appearance: none !important;
+    background: #D1E0D7;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+}

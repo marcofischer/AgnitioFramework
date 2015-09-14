@@ -13,7 +13,8 @@
         "pathways",
         "hcp",
         "question1",
-        "question2"
+        "question2",
+        "video"
       ],
       "valid": true,
       "name": "pulsar"
@@ -82,6 +83,14 @@
       ],
       "valid": true,
       "name": "Question 2 slide"
+    }, 
+     "video": {
+      "type": "slideshow",
+      "content": [
+        "video_first"
+      ],
+      "valid": true,
+      "name": "Question 2 slide"
     }                     
   },
   "slides": {
@@ -124,6 +133,11 @@
       "valid": true,
       "name": "Question 2 page",
       "file": "question2_first.html"
+    }, 
+    "video_first": {
+      "valid": true,
+      "name": "Video page",
+      "file": "video_first.html"
     }
   }
 }
