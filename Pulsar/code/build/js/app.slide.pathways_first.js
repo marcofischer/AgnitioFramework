@@ -1,14 +1,14 @@
 document.addEventListener("presentationInit",function(){
     var e = "#pathways_first",
-        n = app.slide.pathways_first = {
+        slide = app.slide.pathways_first = {
         elements:{
             submitButton:"#submit"
         },
-        onEnter:function(e){
+        onEnter:function(ele){
             $("#menu").hide(),
-            app.addEvent('tap', n.whichPathway, n.element.submitButton)
+            app.addEvent('tap', slide.whichPathway, slide.element.submitButton)
         },
-        onExit:function(n){
+        onExit:function(ele){
             $("#menu .hasChildren").next().slideUp()
             
         },
