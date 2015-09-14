@@ -12,13 +12,14 @@ width: 400px
 }
 
 #question1_first #showNum {
-position: absolute;
+    position: absolute;
     top: 388px;
-    left: 478px;
+    left: 0;
     font-size: 100px;
     color: #CCC;
     width: 65px;
     text-align: center;
+    width: 100%;
 }
 
 #question1_first #slider1

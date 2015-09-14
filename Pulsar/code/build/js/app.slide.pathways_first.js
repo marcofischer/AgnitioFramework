@@ -18,9 +18,10 @@ document.addEventListener("presentationInit",function(){
             //array for checked items
             var outCome = [];
             //check all inputs for value
-            $('#pathways_first input[type="radio"]:checked').each(function(i, e){
+            $('#pathways_first input[type="radio"]:checked').each(function(){
                 //add checked items to array
-                outCome.push($(this).val()); 
+                outCome.push($(this).val());
+                console.log(outCome); 
             });
             //submit to agnitio tracking
             ag.submit.event({
