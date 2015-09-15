@@ -1,11 +1,11 @@
 document.addEventListener("presentationInit",function(){
-    var e = "#pathways_first",
-        slide = app.slide.pathways_first = {
+    var slide = app.slide.pathways_first = {
         elements:{
             submitButton:"#submit"
         },
         onEnter:function(ele){
-            $("#menu").hide(),
+            $("#menu,#thanks").hide(),
+
             app.addEvent('tap', slide.whichPathway, slide.element.submitButton)
         },
         onExit:function(ele){
@@ -24,6 +24,9 @@ document.addEventListener("presentationInit",function(){
             });
 
             console.log(outCome); 
+
+            $('#submit').hide();
+            $('#thanks').fadeIn("slow");
 
 
             //submit to agnitio tracking

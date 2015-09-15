@@ -77,3 +77,9 @@ margin-bottom: 0px;
     padding: 0;
     margin: 0;
 }
+
+#pathways_first #thanks {
+position: absolute;
+top: 600px;
+left: 633px;
+}
