@@ -1,18 +1,33 @@
 /* Declare fonts */
 
 @font-face {
-    font-family: OpenSans;
-    src: url('../../content/fonts/OpenSans-regular.ttf') format('truetype');
+    font-family: OpenSansLight;
+    src:  url('../../content/fonts/opensans-light-webfont.eot');
+    src:  url('../../content/fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+          url('../../content/fonts/opensans-light-webfont.woff2') format('woff2'),
+          url('../../content/fonts/opensans-light-webfont.woff') format('woff'),
+         url('../../content/fonts/OpenSans-Light.ttf') format('truetype'),
+          url('../../content/fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
 }
 
 @font-face {
     font-family: OpenSansSemiBold;
-    src: url('../../content/fonts/OpenSans-semibold.ttf') format('truetype');
+    src:  url('../../content/fonts/opensans-semibold-webfont.eot');
+    src:  url('../../content/fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+          url('../../content/fonts/opensans-semibold-webfont.woff2') format('woff2'),
+          url('../../content/fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('../../content/fonts/OpenSans-semibold.ttf') format('truetype'),
+          url('../../content/fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
 }
 
 @font-face {
-    font-family: OpenSansLight;
-    src: url('../../content/fonts/OpenSans-Light.ttf') format('truetype');
+    font-family: OpenSans;
+    src:  url('../../content/fonts/opensans-regular-webfont.eot');
+    src:  url('../../content/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+          url('../../content/fonts/opensans-regular-webfont.woff2') format('woff2'),
+          url('../../content/fonts/opensans-regular-webfont.woff') format('woff'),
+          url('../../content/fonts/OpenSans-regular.ttf') format('truetype'),
+          url('../../content/fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
 }
 
 #presentation{height:768px;}
