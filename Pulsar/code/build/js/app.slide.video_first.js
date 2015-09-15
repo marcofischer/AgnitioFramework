@@ -10,7 +10,8 @@ document.addEventListener('presentationInit', function() {
     onEnter: function(ele) {
          $('#menu').hide();   
          app.addEvent('tap', slide.startVideo, slide.element.myvideo);   
-
+         app.addEvent('swipeleft', touchy.stop, slide.element.myvideo);
+         app.addEvent('swiperight', touchy.stop, slide.element.myvideo);
     },
 
     onExit: function(ele) {

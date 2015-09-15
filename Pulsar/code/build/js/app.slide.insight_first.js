@@ -8,20 +8,29 @@ document.addEventListener("presentationInit",function(){
     onEnter:function(ele){
       app.addEvent("tap", slide.togglehwwwindow, slide.element.togglehww),
       app.addEvent("tap", slide.windowCloser, slide.element.closeWindow),
-      $("#menu").hide(),
-      $("#cone,#ctwo,#cthree,#cfour,#cfive").hide()
+      $("#menu").hide();
+      // $("#cone,#ctwo,#cthree,#cfour,#cfive").hide()
     },
     onExit:function(ele){
       $(e+" #menu .hasChildren").next().slideUp()
     },
     togglehwwwindow:function(e){
-      $("#window_hww").show(),
-      $("#mainfooter").addClass("windowed"),
-      $("#cone").fadeIn("400"),
-      $("#ctwo").delay(300).fadeIn("400"),
-      $("#cthree").delay(600).fadeIn("400"),
-      $("#cfour").delay(900).fadeIn("400"),
-      $("#cfive").delay(1200).fadeIn("400");
+      $("#window_hww").show();
+      $("#mainfooter").addClass("windowed");
+      $("#cone").addClass("active");
+      
+      var i = 0;
+      var activate = setInterval(function(){
+
+        $('#window_hww img').eq(i).addClass('active');
+        
+        if( i > 5 )
+          clearInterval(activate);
+
+        i++;
+
+      }, 400);
+
       ag.submit.event({
           unique: true,
           category: 'Insight',

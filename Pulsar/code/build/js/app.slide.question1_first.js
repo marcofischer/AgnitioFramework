@@ -9,6 +9,8 @@ document.addEventListener('presentationInit', function() {
     onEnter: function(ele) {
          $('#menu').hide();
          app.addEvent('change', slide.sliderShow, slide.element.slider1);
+         app.addEvent('swipeleft', touchy.stop, slide.element.slider1);
+         app.addEvent('swiperight', touchy.stop, slide.element.slider1);
     },
 
     onExit: function(ele) {

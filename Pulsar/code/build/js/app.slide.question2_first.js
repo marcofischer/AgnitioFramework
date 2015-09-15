@@ -26,6 +26,7 @@ document.addEventListener('presentationInit', function() {
           slide.btn_4.reInit();
         }
 
+        //get current order and store so we have a base
         $('.butul li').each(function(i,e){
             orderValue[i] = $(e).attr('data-value');
         });
@@ -59,6 +60,7 @@ document.addEventListener('presentationInit', function() {
             orgPosition = slide.barPos[currentOrder],
             occupiedBy;
 
+        //reorder circles physically and their position in the stored list
         if(position <= 158){
             occupiedBy = slide.barOrder[0];
             draggy.moveTo(slide.barPos[0], 0);
