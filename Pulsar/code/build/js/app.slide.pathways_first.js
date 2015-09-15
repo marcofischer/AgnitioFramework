@@ -1,4 +1,4 @@
-document.addEventListener("presentationInit",function(){
+  document.addEventListener("presentationInit",function(){
     var e = "#pathways_first",
         slide = app.slide.pathways_first = {
         elements:{
@@ -21,7 +21,6 @@ document.addEventListener("presentationInit",function(){
             $('#pathways_first input[type="radio"]:checked').each(function(){
                 //add checked items to array
                 outCome.push($(this).val());
-                console.log(outCome); 
             });
             //submit to agnitio tracking
             ag.submit.event({
