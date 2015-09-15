@@ -1,6 +1,7 @@
 document.addEventListener('presentationInit', function() {
 
-    var slide = app.slide.question1_first = {
+    var FinalVal = "0",
+    slide = app.slide.question1_first = {
     elements: {
        slider1: "#slider1"
     },
@@ -12,10 +13,28 @@ document.addEventListener('presentationInit', function() {
 
     onExit: function(ele) {
     $('#menu .hasChildren').next().slideUp();
+    console.log(FinalVal);
+    // disable the slider
+    $(slider1).hide();
+    // record the value
+
+    
+
+
+          // submit to agnitio tracking
+            ag.submit.event({
+                unique: true,
+                category: 'Joint Working',
+                label: "How many projects?",
+                value: FinalVal,
+                path: app.getPath()
+            });
+
     },
 
     sliderShow: function(e) {
-    var FinalVal = (this).value;   
+    noProjects = (this).value; // exists here fine  
+    FinalVal = noProjects;
     // FinalVal stores the current number the user has selected
     }
 
