@@ -23,8 +23,6 @@ document.addEventListener("presentationInit",function(){
                 outCome.push($(this).val());
             });
 
-            console.log(outCome); 
-
             $('#submit').hide();
             $('#thanks').fadeIn("slow");
 

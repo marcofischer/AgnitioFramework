@@ -44,6 +44,11 @@
       "valid": true,
       "name": "Video page",
       "file": "video_first.html"
+    }, 
+    "multiplechoice_example": {
+      "valid": true,
+      "name": "Multiple Choice Example",
+      "file": "multiplechoice_example.html"
     }
   },
   "storyboard": [ "pulsar" ],
@@ -58,7 +63,8 @@
           "hcp",
           "question1",
           "question2",
-          "video"
+          "video",
+          "multiplechoice"
       ],
       "name": "pulsar",
       "type": "collection",
@@ -136,6 +142,14 @@
       ],
       "valid": true,
       "name": "Question 2 slide"
+    }, 
+     "multiplechoice": {
+      "type": "slideshow",
+      "content": [
+        "multiplechoice_example"
+      ],
+      "valid": true,
+      "name": "Multiple Choice Example"
     }                     
   }
 }

@@ -1,0 +1,1 @@
+document.addEventListener("presentationInit",function(){slide=app.slide.multiplechoice_example={elements:{},onEnter:function(e){$("#menu").hide(),app.addEvent("tap",slide.takemetoAbout,slide.element.aboutBtn)},onExit:function(e){$("#menu .hasChildren").next().slideUp()}}});
