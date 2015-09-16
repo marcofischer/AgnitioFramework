@@ -36,30 +36,6 @@ document.addEventListener('presentationInit', function() {
     },
 
 
-       slideshowUnload: function(ele) {
-
-   $("#thisvideo")[0].pause(); 
-       // get current time
-       currentTime1 =  $('#thisvideo')[0].currentTime;
-       //console.log(currentTime1);
-
-        // submit to agnitio tracking
-            ag.submit.event({
-                unique: true,
-                category: 'Video Stats',
-                label: "Video duration",
-                value: currentTime1,
-                path: app.getPath()
-            });
-
-
-
-
-       },
-
-
-
-
     startVideo: function(e) {
         
     // Allow the video to be clicked and paused etc as you'd expect it to
@@ -75,7 +51,29 @@ document.addEventListener('presentationInit', function() {
         }
 
 
-}
+},
+
+   
+   slideshowUnload: function(ele) {
+
+   $("#thisvideo")[0].pause(); 
+       // get current time
+       currentTime1 =  "Hello Garry";
+       //console.log(currentTime1);
+
+        // submit to agnitio tracking
+            ag.submit.event({
+                unique: true,
+                category: 'Video Stats',
+                label: "Video duration",
+                value: currentTime1,
+                path: app.getPath()
+            });
+
+
+
+
+       },
 
 
 
