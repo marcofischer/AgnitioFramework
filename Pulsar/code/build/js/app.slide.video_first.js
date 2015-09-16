@@ -39,7 +39,7 @@ document.addEventListener('presentationInit', function() {
 
     goToStart:function(){
         if (app.loaded.currentIndex === app.loaded.length - 1) { 
-               app.goTo('pulsar', 'video', 'video_first');
+//               app.goTo('pulsar', 'video', 'video_first');
               
         }
     },
