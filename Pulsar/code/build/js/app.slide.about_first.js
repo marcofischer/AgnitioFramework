@@ -56,8 +56,7 @@ document.addEventListener('presentationInit', function() {
         formfull[4] = $('.attachment_image').val();
 
         if( formfull[0] != '' && formfull[1] != '' && formfull[2] != ''  ){
-            $('#state_message').show().addClass('success');
-            
+               
             var address = formfull[0],
                 subject = formfull[1],
                 body = formfull[2],
