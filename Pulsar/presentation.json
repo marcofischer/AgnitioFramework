@@ -69,7 +69,7 @@
           "question1",
           "question2",
           "video",
-          "multiplechoice"
+          "multiplechoice",
           "thankyou"
       ],
       "name": "pulsar",

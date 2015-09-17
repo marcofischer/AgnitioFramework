@@ -26,15 +26,17 @@ document.addEventListener('presentationInit', function() {
               value = $(this).val(),
               inner = answers[name][value];
 
-          formRoutes.push(inner);
+          // formRoutes.push(inner);
 
       });
 
-      route.forEach(function (e, i) {
-          if ( route[i] == formRoutes ){
-            console.log('match' + route[i]);
-          }
-      });
+      console.log(formRoutes);
+
+      // route.forEach(function (e, i) {
+      //     if ( route[i] == formRoutes ){
+      //       console.log('match' + route[i]);
+      //     }
+      // });
 
 
     }
