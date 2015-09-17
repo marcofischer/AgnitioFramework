@@ -3,6 +3,7 @@ document.addEventListener('presentationInit', function() {
 // Go Home
 
 
+
   $('#menu ul ul li, .local li').on('tap', function () { // target the children ul ul only and not top level
 
     // when clicking on menu, find the data-slideshow and data-content and take the user there

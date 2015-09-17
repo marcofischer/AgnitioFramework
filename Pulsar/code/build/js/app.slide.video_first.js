@@ -7,11 +7,14 @@ document.addEventListener('presentationInit', function() {
 
     },
 
+
     onEnter: function(ele) {
          $('#menu').hide();   
          app.addEvent('tap', slide.startVideo, slide.element.myvideo);   
          app.addEvent('swipeleft', touchy.stop, slide.element.myvideo);
          app.addEvent('swiperight', touchy.stop, slide.element.myvideo);
+         app.addEvent('swipeleft', slide.goToStart, ele);
+         console.log('222');
     },
 
     onExit: function(ele) {
@@ -32,7 +35,13 @@ document.addEventListener('presentationInit', function() {
                 path: app.getPath()
             });
 
+    },
 
+    goToStart:function(){
+        if (app.loaded.currentIndex === app.loaded.length - 1) { 
+//               app.goTo('pulsar', 'video', 'video_first');
+              
+        }
     },
 
 

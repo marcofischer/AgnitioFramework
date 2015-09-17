@@ -7,10 +7,10 @@
 	width: 2em;
 	height: 1.8em;
 	background: #fff;
-	left: 7.5em;
-	position: absolute;
-	top: 2em;
-	z-index: 9;
+	left: 7.6em;
+    position: absolute;
+    top: 2.1em;
+    z-index: 9;
 }
 .pdf_close {
 	position: absolute;
@@ -112,4 +112,12 @@
 #pdf_Form #state_message.success .success { 
 	display: block; 
 	background: #538A72;
+}
+
+
+#about_first .pdf_Form {
+    background: url('../../content/img/about_first/pdf.png') top left no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
 }
